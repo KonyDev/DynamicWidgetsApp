@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application name="SampleDynamicWidgets" id="SampleDynamicWidgets">
+    <container type="dialog" id="footer" displayname="Popup"/>
+    <container type="form" id="frmIntro" displayname="Form"/>
+    <container type="form" id="frmOption" displayname="Form"/>
+    <globalsequences/>
+    <skins/>
+</application>
