@@ -11,3 +11,4 @@ The application displays a selection of dynamic widgets that includes, Dynamic: 
 # Supported platforms:
 **Mobile**
  * iPhone
+ * android
