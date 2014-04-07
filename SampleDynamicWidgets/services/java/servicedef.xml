@@ -5,7 +5,7 @@
    <services>
       <service cachable="false" cacheduration="" id="javaString" smscode="" smsenabled="false" type="javaConnector">
          <service-config>
-            <config-param name="className" value="com.kony.evalstring.DynamicWidgetString"/>
+            <config-param name="className" value="com.kony.evalstringservice.DynamicWidgetString"/>
             <config-param name="methodName" value="evalString"/>
             <config-param name="preprocessorname" value=""/>
             <config-param name="postprocessorname" value=""/>

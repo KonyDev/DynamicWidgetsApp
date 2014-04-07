@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <plugins>
-    <pluginInfo plugin-name="Kony Studio" plugin-id="com.pat.tool.keditor.KEditorPlugin" version-no="5.5.46.QA_v201403291454"/>
+    <pluginInfo plugin-name="Kony Studio" plugin-id="com.pat.tool.keditor.KEditorPlugin" version-no="5.5.46.QA_v201404041631_r1"/>
     <pluginInfo plugin-name="Third Party Jars Plug-in" version-no="5.5.13.QA_v201403251727"/>
     <pluginInfo plugin-name="Soap UI Plugin" plugin-id="com.pat.soapui.SoapUIPlugin" version-no="5.5.5.QA_v201310211059"/>
     <pluginInfo plugin-name="Kony Codegenerator" version-no="5.5.34.QA_v201403281641"/>
@@ -11,7 +11,7 @@
     <pluginInfo plugin-name="CloudThirdPartyPlugin" plugin-id="com.kony.cloudthirdparty.Activator" version-no="5.5.28.QA_v201403262018"/>
     <pluginInfo plugin-name="Visualizer Integration Plugin" plugin-id="com.viz.ide.VisualiserIDEPlugin" version-no="5.5.22.QA_v201402271510_r1"/>
     <pluginInfo plugin-name="Tablet Android" plugin-id="com.pat.android.Activator" version-no="5.5.42.QA_v201403281657"/>
-    <pluginInfo plugin-name="Blackberry &amp; J2ME" plugin-id="com.pat.j2me.J2MEPlugin" version-no="5.5.22.QA_v201402111938"/>
+    <pluginInfo plugin-name="Blackberry &amp; J2ME" plugin-id="com.pat.j2me.J2MEPlugin" version-no="5.5.26.QA_v201403201527"/>
     <pluginInfo plugin-name="Blackberry 10" plugin-id="com.kony.bb10.BB10Plugin" version-no="5.5.14.QA_v201403071139_r1"/>
     <pluginInfo plugin-name="Winmobile Plug-in" plugin-id="com.pat.winmobile.WinMobilePlugin" version-no="5.5.10.QA_v201402141901"/>
     <pluginInfo plugin-name="Windows Phone 8 Plug-in" plugin-id="com.kony.windows.WindowsPhone8Plugin" version-no="5.5.14.QA_v201403142143"/>
@@ -23,5 +23,5 @@
     <pluginInfo plugin-name="Desktop Web" version-no="5.5.21.QA_v201403281251"/>
     <pluginInfo plugin-name="Kony Sync" plugin-id="com.kony.sync.ide.SyncPlugin" version-no="5.5.73.QA_v201403271119"/>
     <pluginInfo plugin-name="Kony Web Commons" plugin-id="com.kony.web.Activator" version-no="5.5.12.QA_v201403280035"/>
-    <pluginInfo plugin-name="iOS Plugin" plugin-id="iosplugin.Activator" version-no="5.5.26.QA_v201403122140_r2"/>
+    <pluginInfo plugin-name="iOS Plugin" plugin-id="iosplugin.Activator" version-no="5.5.27.QA_v201403290902_r1"/>
 </plugins>

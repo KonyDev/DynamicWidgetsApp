@@ -427,7 +427,7 @@
         <dialog_width>80</dialog_width>
         <headerId>None</headerId>
         <footerId>None</footerId>
-        <title>Home</title>
+        <title>Options</title>
         <init>
             <evtSequence>
                 <enabled>true</enabled>
@@ -608,7 +608,7 @@
         <bb_orientation>0</bb_orientation>
         <blackberry_no_of_items>0</blackberry_no_of_items>
         <bb_titleskinId>Skin Defaults</bb_titleskinId>
-        <bbTitlebar>true</bbTitlebar>
+        <bbTitlebar>false</bbTitlebar>
         <BBSkinAroundPopup>Skin Defaults</BBSkinAroundPopup>
         <autofocus>true</autofocus>
         <j2me_undockappfooter>false</j2me_undockappfooter>
@@ -770,7 +770,7 @@
         <desktopweb_draggable>false</desktopweb_draggable>
         <desktopweb_minonlostfocus>false</desktopweb_minonlostfocus>
         <children xsi:type="kButton">
-            <ID>button120778162421548</ID>
+            <ID>bttnLp</ID>
             <gridMetaData>
                 <colSpan>1</colSpan>
                 <column>0</column>
@@ -845,17 +845,17 @@
             </rendererData>
             <margins>
                 <android>
-                    <left>3</left>
-                    <right>3</right>
+                    <left>5</left>
+                    <right>5</right>
                     <top>10</top>
                     <bottom>2</bottom>
                     <unit>%</unit>
                 </android>
                 <android_override>true</android_override>
                 <bb>
-                    <left>3</left>
-                    <right>3</right>
-                    <top>2</top>
+                    <left>5</left>
+                    <right>5</right>
+                    <top>10</top>
                     <bottom>2</bottom>
                     <unit>%</unit>
                 </bb>
@@ -901,8 +901,8 @@
                 </ipad>
                 <ipad_override>false</ipad_override>
                 <iphonerc>
-                    <left>3</left>
-                    <right>3</right>
+                    <left>5</left>
+                    <right>5</right>
                     <top>10</top>
                     <bottom>2</bottom>
                     <unit>%</unit>
@@ -990,10 +990,10 @@
                 </windows8>
                 <windows8_override>false</windows8_override>
                 <winmobile>
-                    <left>3</left>
-                    <right>3</right>
-                    <top>2</top>
-                    <bottom>2</bottom>
+                    <left>4</left>
+                    <right>4</right>
+                    <top>10</top>
+                    <bottom>0</bottom>
                     <unit>%</unit>
                 </winmobile>
                 <winmobile6x>
@@ -1006,13 +1006,13 @@
                 <winmobile6x_override>true</winmobile6x_override>
                 <winmobile_override>true</winmobile_override>
                 <winphone8>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
+                    <left>4</left>
+                    <right>4</right>
+                    <top>10</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </winphone8>
-                <winphone8_override>false</winphone8_override>
+                <winphone8_override>true</winphone8_override>
                 <xhtmlAdvBB>
                     <left>3</left>
                     <right>3</right>
@@ -1122,8 +1122,8 @@
                 <bb>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>2</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </bb>
                 <bb10>
@@ -1275,11 +1275,11 @@
                 <winphone8>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>3</top>
+                    <bottom>3</bottom>
                     <unit>%</unit>
                 </winphone8>
-                <winphone8_override>false</winphone8_override>
+                <winphone8_override>true</winphone8_override>
                 <xhtmlAdvBB>
                     <left>0</left>
                     <right>0</right>
@@ -1487,7 +1487,7 @@
             <projectState>0</projectState>
         </children>
         <children xsi:type="kButton">
-            <ID>button120664956619297</ID>
+            <ID>bttnRp</ID>
             <gridMetaData>
                 <colSpan>1</colSpan>
                 <column>0</column>
@@ -1562,16 +1562,16 @@
             </rendererData>
             <margins>
                 <android>
-                    <left>3</left>
-                    <right>3</right>
+                    <left>5</left>
+                    <right>5</right>
                     <top>2</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </android>
                 <android_override>true</android_override>
                 <bb>
-                    <left>3</left>
-                    <right>3</right>
+                    <left>5</left>
+                    <right>5</right>
                     <top>2</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
@@ -1618,8 +1618,8 @@
                 </ipad>
                 <ipad_override>false</ipad_override>
                 <iphonerc>
-                    <left>3</left>
-                    <right>3</right>
+                    <left>5</left>
+                    <right>5</right>
                     <top>2</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
@@ -1707,11 +1707,11 @@
                 </windows8>
                 <windows8_override>false</windows8_override>
                 <winmobile>
-                    <left>10</left>
-                    <right>10</right>
-                    <top>7</top>
+                    <left>4</left>
+                    <right>4</right>
+                    <top>3</top>
                     <bottom>0</bottom>
-                    <unit>px</unit>
+                    <unit>%</unit>
                 </winmobile>
                 <winmobile6x>
                     <left>10</left>
@@ -1723,13 +1723,13 @@
                 <winmobile6x_override>true</winmobile6x_override>
                 <winmobile_override>true</winmobile_override>
                 <winphone8>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
+                    <left>4</left>
+                    <right>4</right>
+                    <top>3</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </winphone8>
-                <winphone8_override>false</winphone8_override>
+                <winphone8_override>true</winphone8_override>
                 <xhtmlAdvBB>
                     <left>0</left>
                     <right>0</right>
@@ -1839,8 +1839,8 @@
                 <bb>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>2</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </bb>
                 <bb10>
@@ -1976,9 +1976,9 @@
                 <winmobile>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
-                    <unit>px</unit>
+                    <top>3</top>
+                    <bottom>3</bottom>
+                    <unit>%</unit>
                 </winmobile>
                 <winmobile6x>
                     <left>0</left>
@@ -1992,11 +1992,11 @@
                 <winphone8>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>3</top>
+                    <bottom>3</bottom>
                     <unit>%</unit>
                 </winphone8>
-                <winphone8_override>false</winphone8_override>
+                <winphone8_override>true</winphone8_override>
                 <xhtmlAdvBB>
                     <left>0</left>
                     <right>0</right>
@@ -2108,7 +2108,7 @@
                             <mainaction xsi:type="eventDecisionAction">
                                 <mainaction>
                                     <mainaction xsi:type="eventExpressionAction">
-                                        <enabled>true</enabled>
+                                        <enabled>false</enabled>
                                         <name></name>
                                         <type>5</type>
                                         <expr></expr>
@@ -2122,7 +2122,7 @@
                                     <mainaction xsi:type="eventDecisionAction">
                                         <mainaction>
                                             <mainaction xsi:type="eventExpressionAction">
-                                                <enabled>true</enabled>
+                                                <enabled>false</enabled>
                                                 <name></name>
                                                 <type>5</type>
                                                 <expr></expr>
@@ -2133,13 +2133,13 @@
                                                     </entry>
                                                 </exprMap>
                                             </mainaction>
-                                            <enabled>true</enabled>
+                                            <enabled>false</enabled>
                                             <name>true</name>
                                             <type>0</type>
                                         </mainaction>
                                         <mainaction>
                                             <mainaction xsi:type="eventExpressionAction">
-                                                <enabled>true</enabled>
+                                                <enabled>false</enabled>
                                                 <name></name>
                                                 <type>5</type>
                                                 <expr></expr>
@@ -2150,11 +2150,11 @@
                                                     </entry>
                                                 </exprMap>
                                             </mainaction>
-                                            <enabled>true</enabled>
+                                            <enabled>false</enabled>
                                             <name>false</name>
                                             <type>0</type>
                                         </mainaction>
-                                        <enabled>true</enabled>
+                                        <enabled>false</enabled>
                                         <name></name>
                                         <type>3</type>
                                         <expr></expr>
@@ -2165,16 +2165,16 @@
                                             </entry>
                                         </exprMap>
                                     </mainaction>
-                                    <enabled>true</enabled>
+                                    <enabled>false</enabled>
                                     <name>true</name>
                                     <type>0</type>
                                 </mainaction>
                                 <mainaction>
-                                    <enabled>true</enabled>
+                                    <enabled>false</enabled>
                                     <name>false</name>
                                     <type>0</type>
                                 </mainaction>
-                                <enabled>true</enabled>
+                                <enabled>false</enabled>
                                 <name></name>
                                 <type>3</type>
                                 <expr></expr>
@@ -2185,11 +2185,11 @@
                                     </entry>
                                 </exprMap>
                             </mainaction>
-                            <enabled>true</enabled>
+                            <enabled>false</enabled>
                             <name>callback sequence</name>
                             <type>0</type>
                         </mainaction>
-                        <enabled>true</enabled>
+                        <enabled>false</enabled>
                         <name></name>
                         <type>7</type>
                         <blocking>false</blocking>
@@ -2204,7 +2204,33 @@
                         <newInputMapping/>
                         <secure>false</secure>
                         <serviceId>javaString</serviceId>
-                        <srcForm>frmIntro</srcForm>
+                        <srcForm>frmOption</srcForm>
+                    </actionList>
+                    <actionList xsi:type="eventFunctionAction">
+                        <enabled>true</enabled>
+                        <name></name>
+                        <type>6</type>
+                        <functionName>None</functionName>
+                        <functionNameMap>
+                            <entry>
+                                <key>js</key>
+                                <value>createDynamicFormRemotely</value>
+                            </entry>
+                            <entry>
+                                <key>lua</key>
+                                <value>None</value>
+                            </entry>
+                        </functionNameMap>
+                        <paramDataMap>
+                            <entry>
+                                <key>js</key>
+                                <value/>
+                            </entry>
+                            <entry>
+                                <key>lua</key>
+                                <value/>
+                            </entry>
+                        </paramDataMap>
                     </actionList>
                     <enabled>true</enabled>
                     <seqname></seqname>
@@ -2321,7 +2347,7 @@
                 <mixed_iphone>false</mixed_iphone>
                 <rc_android>false</rc_android>
                 <rc_android_tab>true</rc_android_tab>
-                <rc_blackberry>false</rc_blackberry>
+                <rc_blackberry>true</rc_blackberry>
                 <rc_blackberry10>false</rc_blackberry10>
                 <rc_ipad>true</rc_ipad>
                 <rc_iphone>false</rc_iphone>
@@ -2329,9 +2355,9 @@
                 <rc_palm>false</rc_palm>
                 <rc_symbian>false</rc_symbian>
                 <rc_windows8>true</rc_windows8>
-                <rc_winmobile>false</rc_winmobile>
+                <rc_winmobile>true</rc_winmobile>
                 <rc_winmobile6x>false</rc_winmobile6x>
-                <rc_winphone8>false</rc_winphone8>
+                <rc_winphone8>true</rc_winphone8>
                 <tabspa_ipad>true</tabspa_ipad>
                 <tabspa_windows>true</tabspa_windows>
                 <tabspaspa_android>true</tabspaspa_android>
@@ -2378,7 +2404,7 @@
                     <unit>%</unit>
                 </bb10>
                 <bb10_override>false</bb10_override>
-                <bb_override>false</bb_override>
+                <bb_override>true</bb_override>
                 <default_override>true</default_override>
                 <defaults>
                     <left>0</left>
@@ -2501,7 +2527,7 @@
                 </windows8>
                 <windows8_override>true</windows8_override>
                 <winmobile>
-                    <left>1</left>
+                    <left>3</left>
                     <right>1</right>
                     <top>1</top>
                     <bottom>1</bottom>
@@ -2517,11 +2543,11 @@
                 <winmobile6x_override>true</winmobile6x_override>
                 <winmobile_override>true</winmobile_override>
                 <winphone8>
-                    <left>1</left>
+                    <left>3</left>
                     <right>1</right>
                     <top>1</top>
                     <bottom>1</bottom>
-                    <unit>px</unit>
+                    <unit>%</unit>
                 </winphone8>
                 <winphone8_override>true</winphone8_override>
                 <xhtmlAdvBB>
@@ -2633,8 +2659,8 @@
                 <bb>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>1</top>
+                    <bottom>1</bottom>
                     <unit>%</unit>
                 </bb>
                 <bb10>
@@ -2645,7 +2671,7 @@
                     <unit>%</unit>
                 </bb10>
                 <bb10_override>false</bb10_override>
-                <bb_override>false</bb_override>
+                <bb_override>true</bb_override>
                 <default_override>true</default_override>
                 <defaults>
                     <left>1</left>
@@ -2782,7 +2808,7 @@
                     <unit>%</unit>
                 </winmobile6x>
                 <winmobile6x_override>false</winmobile6x_override>
-                <winmobile_override>false</winmobile_override>
+                <winmobile_override>true</winmobile_override>
                 <winphone8>
                     <left>0</left>
                     <right>0</right>
@@ -2790,7 +2816,7 @@
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </winphone8>
-                <winphone8_override>false</winphone8_override>
+                <winphone8_override>true</winphone8_override>
                 <xhtmlAdvBB>
                     <left>0</left>
                     <right>0</right>
@@ -2888,7 +2914,7 @@
                 </xhtmlNormal>
                 <xhtmlNormal_override>false</xhtmlNormal_override>
             </paddings>
-            <SText>Home</SText>
+            <SText>Options</SText>
             <overridePerferred>
                 <width>true</width>
                 <height>false</height>
@@ -2898,6 +2924,8 @@
             <parent_wrapping>word</parent_wrapping>
             <parent_longText>false</parent_longText>
             <parent_renderAsAnchor>false</parent_renderAsAnchor>
+            <overrideProperties>KLabel.winmobileContentAlign</overrideProperties>
+            <overrideProperties>KLabel.winphone8_contentalign</overrideProperties>
             <iphone_wrapping>0</iphone_wrapping>
             <iphone_contentAlignment>0</iphone_contentAlignment>
             <iphone_longtext>false</iphone_longtext>
@@ -2929,6 +2957,7 @@
             <projectState>0</projectState>
         </children>
         <overrideProperties>KForm.androidtitleBar</overrideProperties>
+        <overrideProperties>KForm.bbTitleBar</overrideProperties>
         <overrideProperties>KForm.iphonetitleBar</overrideProperties>
         <winphone8_intransition>Default</winphone8_intransition>
         <winphone8_outtransition>Default</winphone8_outtransition>

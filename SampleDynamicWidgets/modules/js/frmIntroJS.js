@@ -5,7 +5,12 @@
 ******************************************************************/
 	function hBoxOuter(){
 		var hboxbasicConf1 = {id:"hBoxOuterId",isVisible:true,position: constants.BOX_POSITION_AS_NORMAL,orientation:constants.BOX_LAYOUT_HORIZONTAL,skin:"hBoxTransparentUnrounded"};
-		var hboxlayoutConf1 = {containerWeight:100,margin:[0,0,0,0],padding:[0,0,0,0],percent:true,vExpand: false,hExpand: true};
+		var hboxlayoutConf1;
+		if(kony.os.deviceInfo().name=="WindowsPhone")
+		{
+			hboxlayoutConf1 = {containerWeight:100,margin:[5,0,0,0],padding:[0,0,0,0],percent:true,vExpand: false,hExpand: true};
+		}else
+		 	hboxlayoutConf1 = {containerWeight:100,margin:[0,0,0,0],padding:[0,0,0,0],percent:true,vExpand: false,hExpand: true};
 		var hboxPSPConfig1 = {};
 		topHboxOuter = new kony.ui.Box(hboxbasicConf1, hboxlayoutConf1, hboxPSPConfig1);
 		topHboxOuter.add(vBoxOuter());
@@ -102,7 +107,7 @@
 			if(kony.os.deviceInfo().name=="android")
 				var listLayoutConf1 = {containerWeight:60,hExpand:true,widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,margin:[0,1,2,0],contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,0,0,1],percent:true,vExpand: false,hExpand: true};
 			else
-				var listLayoutConf1 = {containerWeight:60,hExpand:true,widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,margin:[0,3,2,0],contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,0,0,0],percent:true,vExpand: false,hExpand: true};
+				var listLayoutConf1 = {containerWeight:60,hExpand:true,widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,margin:[0,3,2,0],contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,1,0,1],percent:true,vExpand: false,hExpand: true};
 			var listPSPConf1 = {viewType:constants.LISTBOX_VIEW_TYPE_LISTVIEW};
 			return new kony.ui.ListBox(listBasicConf1, listLayoutConf1, listPSPConf1);	
 		}
@@ -140,7 +145,8 @@
 		if(kony.os.deviceInfo().name=="android")
 			return new kony.ui.TextBox2(txtBoxBasic1, {containerWeight:60,hExpand:true,margin:[0,1,2,0],padding:[0,2,0,2],widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,percent:true}, {});
 		else
-			return new kony.ui.TextBox2(txtBoxBasic1, {containerWeight:60,hExpand:true,margin:[0,3,2,0],padding:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,percent:true}, {});
+			return new kony.ui.TextBox2(txtBoxBasic1, {containerWeight:60,hExpand:true,margin:[0,1,2,0],padding:[0,1,0,1],widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,percent:true}, {});
+			//return new kony.ui.TextBox2(txtBoxBasic1, {containerWeight:60,hExpand:true,margin:[0,3,2,0],padding:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,percent:true}, {});
 	}
 
 /*****************************************************************
@@ -184,6 +190,26 @@
 		}
 		catch(err){
 			alert("error while creating the forms"+err);
+		}
+	}
+	function createDynamicFormRemotely()
+	{
+		var url=appConfig.url;
+		kony.print("************url***********"+ url);
+		var myhttpheaders={authkey:"myauthkey", authtoken:"myauthtoken"};
+		var inputParamTable={};
+		inputParamTable={appID:"dynamicwidget", serviceID:"javaString", channel: "rc",httpheaders:myhttpheaders};
+	   	var connHandle = kony.net.invokeServiceAsync(url,inputParamTable,callbackfunction);
+	}
+	function callbackfunction(status,result)
+	{
+		if(status==400)
+		{
+			kony.print(JSON.stringify(result));
+			kony.print("************opstatus***********"+ result["opstatus"]);
+			if(result["opstatus"] == 0)
+				{//eval(javaString["evalstring"]);
+				eval(result["evalstring"]);}
 		}
 	}
 

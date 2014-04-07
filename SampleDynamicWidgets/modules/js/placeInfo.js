@@ -45,9 +45,11 @@
 		var vboxlayoutConf1 = {containerWeight:100,margin:[0,0,0,0],padding:[0,0,0,0],percent:true};
 		var topVbox = new kony.ui.Box(vboxbasicConf1, vboxlayoutConf1, {});
 		for(var i=1;i<=count;i++){
-			if((frmDynamicJS["nameId"+i]["text"]!= textValue) && (frmDynamicJS["listId"+i]["selectedKey"] != "key0")){
+			if((frmDynamicJS["nameId"+i]["text"]!= textValue) && (frmDynamicJS["listId"+i]["selectedKey"] != "key0"))
+			{
 				var textName = frmDynamicJS["nameId"+i]["text"];
 				var textCountry = frmDynamicJS["listId"+i]["selectedKeyValue"][1];
+				//kony.print(myString)
 				if(i == 1)
 					topVbox.add(hBoxForName(textName),hBoxForCountry(textCountry));
 				else
@@ -94,7 +96,6 @@ function hBoxForName(text){
 *	Author  : Kony Solutions
 *	Purpose : Below function will return the Hbox which contains two labels for Country name. 
 ******************************************************************/
-
 function hBoxForCountry(text){
 	random = random+1;
 	var hboxbasicConf1 = {id:"hBoxForCountry"+random,isVisible:true,orientation:constants.BOX_LAYOUT_HORIZONTAL,skin:"hBoxTransparentUnrounded"};
@@ -103,17 +104,14 @@ function hBoxForCountry(text){
 	prodHbox2.add(lblForName("Country: "),lblForNameInfo(text));
 	return prodHbox2;	
 }
-
-
 /*****************************************************************
 *	Name    : lblForNameInfo
 *	Author  : Kony Solutions
 *	Purpose : Below function will return labels for Candidate name and Country name. 
 ******************************************************************/
- 
-	function lblForNameInfo(text){
+function lblForNameInfo(text){
 		random = random+1;
-		var lblBasicConf1 = { id:"lblForNameInfo"+random,text :text,isVisible:true,skin: "lblNormal"};
+		var lblBasicConf1 = { id:"lblForNameInfo"+random,text :text,isVisible:true,skin: "sknLblKonyThemeNormal"};
 		var lbllayoutConf1 = {containerWeight:50,hExpand:true,margin:[0,3,0,0],contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[5,0,0,0],percent:true};
 		return new kony.ui.Label(lblBasicConf1, lbllayoutConf1, {});	
 	}
@@ -124,7 +122,8 @@ function hBoxForCountry(text){
 *	Purpose : Below function for add top HBox into Form(frmDynamicJS2) 
 ******************************************************************/
 function addWidgetsToDynamicFormTwo(){
-		if(frmDynamicJS2["hBoxforPlaceInfoOuterId"]) {frmDynamicJS2.remove(frmDynamicJS2["hBoxforPlaceInfoOuterId"]);}		
+		if(frmDynamicJS2["hBoxforPlaceInfoOuterId"]) 
+		{frmDynamicJS2.remove(frmDynamicJS2["hBoxforPlaceInfoOuterId"]);}		
 		    frmDynamicJS2.add(hBoxforPlaceInfoOuter());
 	}
 
@@ -140,7 +139,7 @@ function addWidgetsToDynamicFormTwo(){
 		else textValue = "";					
 		try{	
 		if((frmDynamicJS["nameId1"]["text"]!= textValue) && (frmDynamicJS["listId1"]["selectedKey"] != "key0")){
-			var frmLogBasiConf = {id: "frmDynamicJS2", addWidgets :addWidgetsToDynamicFormTwo,skin :"frmSampleSkin",headers:[hBoxForHeader()]};
+			var frmLogBasiConf = {id: "frmDynamicJS2", addWidgets :addWidgetsToDynamicFormTwo,skin :"frmSampleSkin",headers:[hBoxForHeader2()]};
 			var frmLayoutConf = {percent:true};
 			var frmPSPConfig = {inTransitionConfig:{transitionDirection:"topCenter"}};
 		    frmDynamicJS2 = new kony.ui.Form2(frmLogBasiConf, frmLayoutConf, frmPSPConfig);

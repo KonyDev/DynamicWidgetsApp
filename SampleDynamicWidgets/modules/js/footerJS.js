@@ -5,23 +5,48 @@
 ******************************************************************/
 function hBoxForHeader()
 {
-	//alert("hello");
 	var hboxbasic1 = {id:"hdrBox",isVisible:true,orientation:constants.BOX_LAYOUT_HORIZONTAL,skin:"hboxHeader"};
 	var hboxlayout1 = {containerWeight:100,margin:[0,0,0,0],padding:[0,0,0,0],percent:true};
 	var headerHbox = new kony.ui.Box(hboxbasic1, hboxlayout1, {});
-	if(kony.os.deviceInfo().name=="android" ||kony.os.deviceInfo().name=="thinclient")
+	if(kony.os.deviceInfo().name=="android" ||kony.os.deviceInfo().name=="thinclient"||kony.os.deviceInfo().name=="blackberry"||kony.os.deviceInfo().name=="WindowsPhone")
 		headerHbox.add(lblForHeader(),btnAdd("Add"));
 	else
 		headerHbox.add(backBtnForHeader(),lblForHeader(),btnAdd("Add"));
 	return headerHbox;
 }
+function hBoxForHeader2()
+{
+	var hboxbasic1 = {id:"hdrBox",isVisible:true,orientation:constants.BOX_LAYOUT_HORIZONTAL,skin:"hboxHeader"};
+	var hboxlayout1 = {containerWeight:100,margin:[0,0,0,0],padding:[0,0,0,0],percent:true};
+	var headerHbox = new kony.ui.Box(hboxbasic1, hboxlayout1, {});
+	if(kony.os.deviceInfo().name=="android" ||kony.os.deviceInfo().name=="thinclient"||kony.os.deviceInfo().name=="blackberry"||kony.os.deviceInfo().name=="WindowsPhone")
+		headerHbox.add(lblForHeader2());
+	else
+		headerHbox.add(backBtnForHeader(),lblForHeader2());
+	return headerHbox;
+}
 function lblForHeader()
 {
-	var lblBasicConf1 = { id:"lblForHeader"+random,text :"Home",isVisible:true,skin: "lblNormal"};
-	if(kony.os.deviceInfo().name=="android"|| kony.os.deviceInfo().name=="thinclient")
-		var lbllayoutConf1 = {containerWeight:60,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[25,0,0,0],vExpand: false,hExpand: true};//,percent:true
+	var lblBasicConf1 = { id:"lblForHeader"+random,text :"Locally Packaged",isVisible:true,skin: "lblNormal"};
+	var lbllayoutConf1;
+	if(kony.os.deviceInfo().name=="android"|| kony.os.deviceInfo().name=="thinclient"||kony.os.deviceInfo().name=="blackberry")
+		 lbllayoutConf1 = {containerWeight:80,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[25,0,0,0],vExpand: false,hExpand: true};//,percent:true
+	else if(kony.os.deviceInfo().name=="WindowsPhone")
+		lbllayoutConf1 = {containerWeight:80,hExpand:true,margin:[6,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,0,0,0],vExpand: false,hExpand: true};
 	else
-		var lbllayoutConf1 = {containerWeight:60,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[0,0,0,0],vExpand: false,hExpand: true};
+		lbllayoutConf1 = {containerWeight:60,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[0,0,0,0],vExpand: false,hExpand: true};
+	return new kony.ui.Label(lblBasicConf1, lbllayoutConf1, {});	
+}
+function lblForHeader2()
+{
+	var lblBasicConf1 = { id:"lblForHeader"+random,text :"Locally Packaged",isVisible:true,skin: "lblNormal"};
+	var lbllayoutConf1;
+	if(kony.os.deviceInfo().name=="android"|| kony.os.deviceInfo().name=="thinclient"||kony.os.deviceInfo().name=="blackberry")
+		 lbllayoutConf1 = {containerWeight:80,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[25,0,0,0],vExpand: false,hExpand: true};//,percent:true
+	else if(kony.os.deviceInfo().name=="WindowsPhone")
+		lbllayoutConf1 = {containerWeight:80,hExpand:true,margin:[6,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,0,0,0],vExpand: false,hExpand: true};
+	else
+		lbllayoutConf1 = {containerWeight:60,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[0,0,0,0],vExpand: false,hExpand: true};
 	return new kony.ui.Label(lblBasicConf1, lbllayoutConf1, {});	
 }
 function backBtnForHeader()
@@ -50,27 +75,15 @@ function backButton()
 *	Author  : Kony Solutions
 *	Purpose : Below function will return the "Add Another Order" button 
 	******************************************************************/
-function btnAdd(text){
-		return new kony.ui.Button({
-		id: "btnAAO",
-		isVisible: true,
-		text: text,
-		skin: "btnAddAnotherOrder",
-		focusSkin: "sknBtnKonyThemeFocus",
-		onClick:onClickAddMoreWidgets
-		    }, {
-		        widgetAlignment: constants.WIDGET_ALIGN_CENTER,
-		        vExpand: false,
-		        hExpand: true,
-		        margin: [0,6,3,6],
-		        padding: [0,6,0,6],
-		        contentAlignment: constants.CONTENT_ALIGN_CENTER,
-		        displayText: true,
-		        marginInPixel: true,
-		        paddingInPixel: true,
-		        containerWeight: 20
-		    }, {});
-		}
+function btnAdd(text)
+{
+var btnBasic={id: "btnAAO",isVisible: true,text: text,skin: "btnAddAnotherOrder",focusSkin: "sknBtnKonyThemeFocus",onClick:onClickAddMoreWidgets};
+var btnLayout;
+if(kony.os.deviceInfo().name=="iPhone Simulator"||kony.os.deviceInfo().name=="iPhone")
+	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand: true,margin: [0,2,2,2],padding: [0,2,0,2],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 20};
+else if(kony.os.deviceInfo().name=="android"|| kony.os.deviceInfo().name=="blackberry"||kony.os.deviceInfo().name=="thinclient"||kony.os.deviceInfo().name=="WindowsPhone")
+	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand:false,margin: [0,4,5,4],padding: [0,2,0,2],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 20};
+return new kony.ui.Button(btnBasic,btnLayout,{});}
 	/*****************************************************************
 	*	Name    : hBoxForHeader
 	*	Author  : Kony Solutions
@@ -90,24 +103,30 @@ function btnAdd(text){
 	*	Purpose : Below function will return the "Place An Order" button 
 	******************************************************************/
 function btnForPlaceAnOrder(text){
-		    return new kony.ui.Button({
-		        id: "btnPAO",
-		        isVisible: true,
-		        text: text,
-		        skin: "sknBtnKonyThemeNormal",
-		        focusSkin: "sknBtnKonyThemeFocus",
-		        onClick:createDynamicForm2
-		    }, {
+ var btnBasic={id: "btnPAO",isVisible: true,text: text,skin: "sknBtnKonyThemeNormal",focusSkin: "sknBtnKonyThemeFocus",onClick:createDynamicForm2};
+ var btnLayout;
+ if(kony.os.deviceInfo().name=="WindowsPhone")
+  btnLayout={
 		        widgetAlignment: constants.WIDGET_ALIGN_CENTER,
 		        vExpand: false,
 		        hExpand: true,
-		        margin: [3,30,3,3],
-		        padding: [0,2,0,2],
+		        margin: [30,30,30,30],
+		        padding: [0,3,0,3],
 		        contentAlignment: constants.CONTENT_ALIGN_CENTER,
 		        displayText: true,
-		        //marginInPixel: true,
-		        //paddingInPixel: true,
 		        containerWeight: 100
-		    }, {});
+		    };
+ else
+ 	btnLayout={
+		        widgetAlignment: constants.WIDGET_ALIGN_CENTER,
+		        vExpand: false,
+		        hExpand: true,
+		        margin: [30,30,30,30],
+		        padding: [0,3,0,3],
+		        contentAlignment: constants.CONTENT_ALIGN_CENTER,
+		        displayText: true,
+		        containerWeight: 100
+		    };
+		    return new kony.ui.Button(btnBasic, btnLayout, {});
 	    }
 	
