@@ -1,9 +1,9 @@
 DynamicWidgetsApp
 =================
-This Application is Showcase for creating dynamic widgets.
+Application to showcase dynamic widget creation.
 
 # Purpose
-This app shows the use of Kony dynamic widget.
+The application displays a selection of dynamic widgets that includes, Dynamic: Form, Header and Footer, Label, Button, Line, Box[HBox and VBox], ListBox Widget, TextBox Widget.
 
 
 # Supported platforms:
