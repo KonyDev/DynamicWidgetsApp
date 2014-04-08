@@ -2531,7 +2531,7 @@
                     <right>1</right>
                     <top>1</top>
                     <bottom>1</bottom>
-                    <unit>px</unit>
+                    <unit>%</unit>
                 </winmobile>
                 <winmobile6x>
                     <left>1</left>

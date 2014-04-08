@@ -132,18 +132,27 @@ function addWidgetsToDynamicFormTwo(){
 *	Author  : Kony Solutions
 *	Purpose : Below function will create dynamic form(frmDynamicJS2) and invoke addWidgetsToDynamicForm2 function.
 ******************************************************************/
-	function createDynamicForm2(){	
+	function createDynamicForm2()
+	{	
 		var deviceInfo = kony.os.deviceInfo();		
 		if( deviceInfo.name.indexOf("iPhone") > 0 || deviceInfo.name == "Blackberry")
 			textValue = null;
 		else textValue = "";					
-		try{	
-		if((frmDynamicJS["nameId1"]["text"]!= textValue) && (frmDynamicJS["listId1"]["selectedKey"] != "key0")){
-			var frmLogBasiConf = {id: "frmDynamicJS2", addWidgets :addWidgetsToDynamicFormTwo,skin :"frmSampleSkin",headers:[hBoxForHeader2()]};
-			var frmLayoutConf = {percent:true};
-			var frmPSPConfig = {inTransitionConfig:{transitionDirection:"topCenter"}};
-		    frmDynamicJS2 = new kony.ui.Form2(frmLogBasiConf, frmLayoutConf, frmPSPConfig);
-		    frmDynamicJS2.show();
+		try{
+			 for(var i=1;i<=count;i++)
+			 {	
+			 	if((frmDynamicJS ["nameId"+i]["text"]!= textValue) && (frmDynamicJS["listId"+i]["selectedKey"] != "key0"))
+                 	IschkAllList = true;
+                  else
+                    IschkAllList = false;
+             }
+            if(IschkAllList)
+            {
+				var frmLogBasiConf = {id: "frmDynamicJS2", addWidgets :addWidgetsToDynamicFormTwo,skin :"frmSampleSkin",headers:[hBoxForHeader2()]};
+				var frmLayoutConf = {percent:true};
+				var frmPSPConfig = {inTransitionConfig:{transitionDirection:"topCenter"}};
+		    	frmDynamicJS2 = new kony.ui.Form2(frmLogBasiConf, frmLayoutConf, frmPSPConfig);
+		    	frmDynamicJS2.show();
 		    }
 		    else
 		    	alert("Please enter all details");
@@ -151,6 +160,6 @@ function addWidgetsToDynamicFormTwo(){
 		catch(err){
 			alert("error while creating the forms"+err);
 		}
-	}
+}
 
 

@@ -15,7 +15,7 @@
     <pluginInfo plugin-name="Blackberry 10" plugin-id="com.kony.bb10.BB10Plugin" version-no="5.5.14.QA_v201403071139_r1"/>
     <pluginInfo plugin-name="Winmobile Plug-in" plugin-id="com.pat.winmobile.WinMobilePlugin" version-no="5.5.10.QA_v201402141901"/>
     <pluginInfo plugin-name="Windows Phone 8 Plug-in" plugin-id="com.kony.windows.WindowsPhone8Plugin" version-no="5.5.14.QA_v201403142143"/>
-    <pluginInfo plugin-name="Windows 8 Plug-in" plugin-id="com.kony.windows.Windows8Plugin" version-no="5.5.15.QA_v201403141931"/>
+    <pluginInfo plugin-name="Windows 8 Plug-in" plugin-id="com.kony.windows.Windows8Plugin" version-no="5.5.18.QA_v201404031917"/>
     <pluginInfo plugin-name="Android" plugin-id="com.pat.android.Activator" version-no="5.5.42.QA_v201403281643"/>
     <pluginInfo plugin-name="ThinClient" plugin-id="thinclientplugin.Activator" version-no="5.5.20.QA_v201403281258"/>
     <pluginInfo plugin-name="Windows Desktop Plug-in" plugin-id="com.kony.windows.WinDesktopPlugin" version-no="5.5.14.QA_v201403141601"/>
