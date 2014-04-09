@@ -13,4 +13,5 @@ The application displays a selection of dynamic widgets that includes, Dynamic: 
 **Mobile**
  * iPhone
  * android
+ * Windows Phone7.5
  * Windows Phone8
