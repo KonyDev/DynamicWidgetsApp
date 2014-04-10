@@ -6,7 +6,7 @@
 		{
 			hboxlayoutConf1 = {containerWeight:100,margin:[6,0,6,0],padding:[0,0,0,0],percent:true};
 		}else
-			hboxlayoutConf1 = {containerWeight:100,margin:[0,0,0,0],padding:[0,0,0,0],percent:true};
+			hboxlayoutConf1 = {containerWeight:100,margin:[10,0,10,0],padding:[0,0,0,0],percent:true};
 		var hboxPSPConfig1 = {};
 		var tophBoxforPlaceInfoOuter = new kony.ui.Box(hboxbasicConf1, hboxlayoutConf1, hboxPSPConfig1);
 		tophBoxforPlaceInfoOuter.add(vBoxforPlaceInfoOuter());

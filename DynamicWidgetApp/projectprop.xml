@@ -89,11 +89,12 @@
     <attributes name="SELECTED_THEME" value="KonyTheme"/>
     <attributes name="GET_TASKS" value="false"/>
     <attributes name="Music_Library" value="true"/>
+    <attributes name="tabletstartupformkey" value="frmIntro"/>
     <attributes name="tciphonebasefontsize" value="12"/>
     <attributes name="bb10keystorepassword" value=""/>
     <attributes name="pathpatternkey" value=""/>
     <attributes name="wp8iconicsmallkey" value=""/>
-    <attributes name="splashlogokey" value="0=splash.9.png,1=iphone_5.png,8=andriod_hdpi.png,2=bb9860.png,46=,42=,3=,16=,18=,43=,22=iphone_5.png,1000=,1001=,1002=,31=,32=,45=,23=,24=,35=,44=,36=,21=,37="/>
+    <attributes name="splashlogokey" value="0=splash.9.png,1=iphone_5.png,8=andriod_hdpi.png,2=bb9860.png,46=,42=,3=,16=,18=,43=andriod_tablet.png,22=iphone_5.png,1000=,1001=,1002=,31=,32=,45=,23=,24=,35=,44=,36=,21=,37="/>
     <attributes name="Shared_User_Certificates" value="true"/>
     <attributes name="inputaccessoryviewtype" value="nextprevtoolbar"/>
     <attributes name="android_allowselfsignedcertificates" value="None"/>
@@ -191,7 +192,7 @@
     <attributes name="ID_CAP_PUSH_NOTIFICATION" value="true"/>
     <attributes name="CONTROL_LOCATION_UPDATES" value="false"/>
     <attributes name="bb10packageid" value=""/>
-    <attributes name="win8shortnamekey" value="SampleDynamicWidgets"/>
+    <attributes name="win8shortnamekey" value="DynamicWidgetsApp"/>
     <attributes name="MASTER_CLEAR" value="false"/>
     <attributes name="post_notification" value="false"/>
     <attributes name="tcnoscriptmessage" value="To use this site, first enable your browser&#039;s JavaScript support and then refresh this page."/>
@@ -376,9 +377,9 @@
     <attributes name="SET_ACTIVITY_WATCHER" value="false"/>
     <attributes name="tcnth320basefontsize" value="15"/>
     <attributes name="WP8_ID_CAP_WALLET" value="false"/>
-    <attributes name="svcaddrkey" value=""/>
     <attributes name="WP8_ID_CAP_WEBBROWSERCOMPONENT" value="true"/>
     <attributes name="ID_CAP_CAMERA" value="false"/>
+    <attributes name="svcaddrkey" value=""/>
     <attributes name="spaandroidtab1024basefontsize" value="16"/>
     <attributes name="SIGNAL_PERSISTENT_PROCESSES" value="false"/>
     <attributes name="tcbb240basefontsize" value="12"/>
@@ -392,7 +393,7 @@
     <attributes name="tcandroid320basefontsize" value="12"/>
     <attributes name="ID_REQ_REARCAMERA" value="false"/>
     <attributes name="tcandroid360basefontsize" value="13"/>
-    <attributes name="win8displaynamekey" value="SampleDynamicWidgets"/>
+    <attributes name="win8displaynamekey" value="DynamicWidgetsApp"/>
     <attributes name="wp8cycle7key" value=""/>
     <attributes name="spaandroidtab800basefontsize" value="14"/>
     <attributes name="tcbb400basefontsize" value="14"/>

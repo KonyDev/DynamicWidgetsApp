@@ -9,7 +9,12 @@
 		if(kony.os.deviceInfo().name=="WindowsPhone")
 		{
 			hboxlayoutConf1 = {containerWeight:100,margin:[5,0,0,0],padding:[0,0,0,0],percent:true,vExpand: false,hExpand: true};
-		}else
+		}
+		else if(kony.os.deviceInfo().name=="iPad Simulator"||kony.os.deviceInfo().name=="iPad")
+		 	hboxlayoutConf1 = {containerWeight:100,margin:[10,0,10,0],padding:[0,0,0,0],percent:true,vExpand: false,hExpand: true};
+		else if(kony.os.deviceInfo().name=="Windows")
+			hboxlayoutConf1 = {containerWeight:100,margin:[120,0,120,0],padding:[0,0,0,0],percent:true,vExpand: false,hExpand: true};
+		 else
 		 	hboxlayoutConf1 = {containerWeight:100,margin:[0,0,0,0],padding:[0,0,0,0],percent:true,vExpand: false,hExpand: true};
 		var hboxPSPConfig1 = {};
 		topHboxOuter = new kony.ui.Box(hboxbasicConf1, hboxlayoutConf1, hboxPSPConfig1);
@@ -200,17 +205,20 @@
 		var inputParamTable={};
 		inputParamTable={appID:"dynamicwidget", serviceID:"javaString", channel: "rc",httpheaders:myhttpheaders};
 	   	var connHandle = kony.net.invokeServiceAsync(url,inputParamTable,callbackfunction);
+	   	alert("A");
 	}
 	function callbackfunction(status,result)
 	{
 		if(status==400)
 		{
+			//alert("B");
 			kony.print(JSON.stringify(result));
+			//alert(" "+JSON.stringify(result));
 			kony.print("************opstatus***********"+ result["opstatus"]);
 			if(result["opstatus"] == 0)
 				{//eval(javaString["evalstring"]);
 				eval(result["evalstring"]);}
-		}
+			}
 	}
 
 

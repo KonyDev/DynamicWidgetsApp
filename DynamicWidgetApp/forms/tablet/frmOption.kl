@@ -26,7 +26,7 @@
     <formName>frmOption</formName>
     <platform>0</platform>
     <mode>0</mode>
-    <formCategory>0</formCategory>
+    <formCategory>100</formCategory>
     <toList>frmIntro</toList>
     <fromList></fromList>
     <headersrcList></headersrcList>
@@ -549,7 +549,7 @@
         <tooltip></tooltip>
         <ipad_popupStyle>0</ipad_popupStyle>
         <ipadTitleBarData>
-            <background_image></background_image>
+            <background_image>blue_pixel.png</background_image>
             <buttonFocusSkinID>Skin Defaults</buttonFocusSkinID>
             <buttonSkinID>Skin Defaults</buttonSkinID>
             <buttonText></buttonText>
@@ -576,14 +576,14 @@
                 <serviceType>0</serviceType>
             </leftImgEvtData>
             <leftPrevTitle>false</leftPrevTitle>
-            <leftSideView>0</leftSideView>
+            <leftSideView>2</leftSideView>
             <leftTitle></leftTitle>
             <leftTitleEvtData>
                 <function>None</function>
                 <serviceType>0</serviceType>
             </leftTitleEvtData>
             <leftTitleI18Key>None</leftTitleI18Key>
-            <leftbtnImgPath></leftbtnImgPath>
+            <leftbtnImgPath>back_ico.png</leftbtnImgPath>
             <rightSideView>0</rightSideView>
             <rightTitle></rightTitle>
             <rightTitleEvtData>
@@ -593,9 +593,9 @@
             <rightTitleI18Key>None</rightTitleI18Key>
             <rightbtnImgPath></rightbtnImgPath>
             <rightbuttonI18Key>None</rightbuttonI18Key>
-            <skinID>Skin Defaults</skinID>
+            <skinID>sknTitleKonyTheme</skinID>
             <usrDefFunction></usrDefFunction>
-            <visible>false</visible>
+            <visible>true</visible>
             <textChecked>true</textChecked>
         </ipadTitleBarData>
         <bb_undockappfooter>false</bb_undockappfooter>
@@ -893,13 +893,13 @@
                 </desktop_web>
                 <desktop_web_override>false</desktop_web_override>
                 <ipad>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <left>30</left>
+                    <right>30</right>
+                    <top>10</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </ipad>
-                <ipad_override>false</ipad_override>
+                <ipad_override>true</ipad_override>
                 <iphonerc>
                     <left>5</left>
                     <right>5</right>
@@ -982,13 +982,13 @@
                 <thinclient_override>false</thinclient_override>
                 <type>1</type>
                 <windows8>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
+                    <left>120</left>
+                    <right>120</right>
+                    <top>50</top>
                     <bottom>0</bottom>
-                    <unit>%</unit>
+                    <unit>px</unit>
                 </windows8>
-                <windows8_override>false</windows8_override>
+                <windows8_override>true</windows8_override>
                 <winmobile>
                     <left>4</left>
                     <right>4</right>
@@ -1135,12 +1135,12 @@
                 </bb10>
                 <bb10_override>false</bb10_override>
                 <bb_override>true</bb_override>
-                <default_override>false</default_override>
+                <default_override>true</default_override>
                 <defaults>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>3</top>
+                    <bottom>3</bottom>
                     <unit>%</unit>
                 </defaults>
                 <desktop_kiosk>
@@ -1162,11 +1162,11 @@
                 <ipad>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>2</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </ipad>
-                <ipad_override>false</ipad_override>
+                <ipad_override>true</ipad_override>
                 <iphonerc>
                     <left>0</left>
                     <right>0</right>
@@ -1251,11 +1251,11 @@
                 <windows8>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>2</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </windows8>
-                <windows8_override>false</windows8_override>
+                <windows8_override>true</windows8_override>
                 <winmobile>
                     <left>0</left>
                     <right>0</right>
@@ -1610,13 +1610,13 @@
                 </desktop_web>
                 <desktop_web_override>false</desktop_web_override>
                 <ipad>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
+                    <left>30</left>
+                    <right>30</right>
+                    <top>2</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </ipad>
-                <ipad_override>false</ipad_override>
+                <ipad_override>true</ipad_override>
                 <iphonerc>
                     <left>5</left>
                     <right>5</right>
@@ -1699,13 +1699,13 @@
                 <thinclient_override>false</thinclient_override>
                 <type>1</type>
                 <windows8>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
+                    <left>120</left>
+                    <right>120</right>
+                    <top>30</top>
                     <bottom>0</bottom>
-                    <unit>%</unit>
+                    <unit>px</unit>
                 </windows8>
-                <windows8_override>false</windows8_override>
+                <windows8_override>true</windows8_override>
                 <winmobile>
                     <left>4</left>
                     <right>4</right>
@@ -1879,11 +1879,11 @@
                 <ipad>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>2</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </ipad>
-                <ipad_override>false</ipad_override>
+                <ipad_override>true</ipad_override>
                 <iphonerc>
                     <left>0</left>
                     <right>0</right>
@@ -1968,11 +1968,11 @@
                 <windows8>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>2</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </windows8>
-                <windows8_override>false</windows8_override>
+                <windows8_override>true</windows8_override>
                 <winmobile>
                     <left>0</left>
                     <right>0</right>
@@ -2237,23 +2237,23 @@
             <rendererData>
                 <desktop_kiosk_channel>true</desktop_kiosk_channel>
                 <desktop_web_channel>true</desktop_web_channel>
-                <mixed_android>false</mixed_android>
-                <mixed_android_tab>true</mixed_android_tab>
-                <mixed_bb>false</mixed_bb>
-                <mixed_ipad>true</mixed_ipad>
-                <mixed_iphone>false</mixed_iphone>
-                <rc_android>false</rc_android>
-                <rc_android_tab>true</rc_android_tab>
+                <mixed_android>true</mixed_android>
+                <mixed_android_tab>false</mixed_android_tab>
+                <mixed_bb>true</mixed_bb>
+                <mixed_ipad>false</mixed_ipad>
+                <mixed_iphone>true</mixed_iphone>
+                <rc_android>true</rc_android>
+                <rc_android_tab>false</rc_android_tab>
                 <rc_blackberry>true</rc_blackberry>
-                <rc_blackberry10>false</rc_blackberry10>
-                <rc_ipad>true</rc_ipad>
-                <rc_iphone>false</rc_iphone>
-                <rc_j2me>false</rc_j2me>
-                <rc_palm>false</rc_palm>
-                <rc_symbian>false</rc_symbian>
-                <rc_windows8>true</rc_windows8>
+                <rc_blackberry10>true</rc_blackberry10>
+                <rc_ipad>false</rc_ipad>
+                <rc_iphone>true</rc_iphone>
+                <rc_j2me>true</rc_j2me>
+                <rc_palm>true</rc_palm>
+                <rc_symbian>true</rc_symbian>
+                <rc_windows8>false</rc_windows8>
                 <rc_winmobile>true</rc_winmobile>
-                <rc_winmobile6x>false</rc_winmobile6x>
+                <rc_winmobile6x>true</rc_winmobile6x>
                 <rc_winphone8>true</rc_winphone8>
                 <tabspa_ipad>true</tabspa_ipad>
                 <tabspa_windows>true</tabspa_windows>
@@ -2271,11 +2271,11 @@
                 <tc_xhtml_advnth>true</tc_xhtml_advnth>
                 <tc_xhtml_advpalm1>true</tc_xhtml_advpalm1>
                 <tc_xhtml_js>true</tc_xhtml_js>
-                <wrapper_android>false</wrapper_android>
+                <wrapper_android>true</wrapper_android>
                 <wrapper_android_tab>true</wrapper_android_tab>
-                <wrapper_bb>false</wrapper_bb>
+                <wrapper_bb>true</wrapper_bb>
                 <wrapper_ipad>true</wrapper_ipad>
-                <wrapper_iphone>false</wrapper_iphone>
+                <wrapper_iphone>true</wrapper_iphone>
             </rendererData>
             <margins>
                 <android>
@@ -2327,13 +2327,13 @@
                 </desktop_web>
                 <desktop_web_override>false</desktop_web_override>
                 <ipad>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
-                    <unit>%</unit>
+                    <left>1</left>
+                    <right>1</right>
+                    <top>1</top>
+                    <bottom>1</bottom>
+                    <unit>px</unit>
                 </ipad>
-                <ipad_override>false</ipad_override>
+                <ipad_override>true</ipad_override>
                 <iphonerc>
                     <left>1</left>
                     <right>1</right>
@@ -2855,6 +2855,7 @@
         </children>
         <overrideProperties>KForm.androidtitleBar</overrideProperties>
         <overrideProperties>KForm.bbTitleBar</overrideProperties>
+        <overrideProperties>KForm.ipadtitleBar</overrideProperties>
         <overrideProperties>KForm.iphonetitleBar</overrideProperties>
         <winphone8_intransition>Default</winphone8_intransition>
         <winphone8_outtransition>Default</winphone8_outtransition>
