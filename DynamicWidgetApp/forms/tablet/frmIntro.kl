@@ -951,13 +951,13 @@
                 </symbian>
                 <symbian_override>true</symbian_override>
                 <tabRCAndroid>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <left>1</left>
+                    <right>1</right>
+                    <top>2</top>
+                    <bottom>1</bottom>
                     <unit>%</unit>
                 </tabRCAndroid>
-                <tablet_rc_android_override>false</tablet_rc_android_override>
+                <tablet_rc_android_override>true</tablet_rc_android_override>
                 <tabspaAndroid>
                     <left>0</left>
                     <right>0</right>
@@ -1599,13 +1599,13 @@
                 </symbian>
                 <symbian_override>true</symbian_override>
                 <tabRCAndroid>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <left>30</left>
+                    <right>30</right>
+                    <top>10</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </tabRCAndroid>
-                <tablet_rc_android_override>false</tablet_rc_android_override>
+                <tablet_rc_android_override>true</tablet_rc_android_override>
                 <tabspaAndroid>
                     <left>0</left>
                     <right>0</right>

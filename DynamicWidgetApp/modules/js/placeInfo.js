@@ -5,7 +5,9 @@
 		if(kony.os.deviceInfo().name=="WindowsPhone")
 		{
 			hboxlayoutConf1 = {containerWeight:100,margin:[6,0,6,0],padding:[0,0,0,0],percent:true};
-		}else
+		}else if(kony.os.deviceInfo().name=="android"||kony.os.deviceInfo().name=="thinclient")
+			hboxlayoutConf1 = {containerWeight:100,margin:[1,0,1,0],padding:[0,0,0,0],percent:true};
+		else
 			hboxlayoutConf1 = {containerWeight:100,margin:[10,0,10,0],padding:[0,0,0,0],percent:true};
 		var hboxPSPConfig1 = {};
 		var tophBoxforPlaceInfoOuter = new kony.ui.Box(hboxbasicConf1, hboxlayoutConf1, hboxPSPConfig1);
@@ -117,7 +119,7 @@ function hBoxForCountry(text){
 function lblForNameInfo(text){
 		random = random+1;
 		var lblBasicConf1 = { id:"lblForNameInfo"+random,text :text,isVisible:true,skin: "sknLblKonyThemeNormal"};
-		var lbllayoutConf1 = {containerWeight:50,hExpand:true,margin:[0,3,0,0],contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[5,0,0,0],percent:true};
+		var lbllayoutConf1 = {containerWeight:50,hExpand:true,margin:[0,0,0,0],contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[5,0,0,0],percent:true};
 		return new kony.ui.Label(lblBasicConf1, lbllayoutConf1, {});	
 	}
 

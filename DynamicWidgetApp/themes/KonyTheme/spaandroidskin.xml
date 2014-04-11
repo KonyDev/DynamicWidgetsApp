@@ -2438,8 +2438,8 @@
 <att name="Shadow_y" value="0" type="Integer"/>
 <att name="BlurRadius" value="0" type="Integer"/>
 <att name="InnerShadow" value="false" type="Boolean"/>
-        <att name="FontNameMap" value="SPA Android,Arial" type="map"/>
         <att name="FontNameMap" value="SPA iPhone,Arial" type="map"/>
+        <att name="FontNameMap" value="SPA Android,Arial" type="map"/>
         <att name="ApplicablePlatforms" value="1111100111110111111111110000111" type="String"/>
         <att name="UseNative" value="false" type="Boolean"/>
         <att name="Font_color_override" value="true" type="Boolean"/>
@@ -7183,8 +7183,8 @@
 <att name="Shadow_y" value="0" type="Integer"/>
 <att name="BlurRadius" value="0" type="Integer"/>
 <att name="InnerShadow" value="false" type="Boolean"/>
-        <att name="FontNameMap" value="SPA Android,Arial" type="map"/>
         <att name="FontNameMap" value="SPA iPhone,Arial" type="map"/>
+        <att name="FontNameMap" value="SPA Android,Arial" type="map"/>
         <att name="ApplicablePlatforms" value="1111100111110111111111110000111" type="String"/>
         <att name="UseNative" value="false" type="Boolean"/>
         <att name="Font_color_override" value="true" type="Boolean"/>
@@ -9068,7 +9068,7 @@
         <att name="Name" value="btnAddAnotherOrder" type="String"/>
         <att name="WidgetType" value="Button" type="String"/>
         <att name="Bg_type" value="0" type="int"/>
-        <att name="Background_color" value="0,155,206" type="RGB"/>
+        <att name="Background_color" value="0,95,125" type="RGB"/>
         <att name="Rightbackground_color" value="255,255,255" type="RGB"/>
         <att name="Bg_gradient_style" value="0" type="int"/>
         <att name="Rightbg_gradient_style" value="0" type="int"/>
@@ -9124,7 +9124,7 @@
         <att name="Bg_spaipad_image" value="" type="String"/>
         <att name="Bg_spaandroid_tablet_image" value="" type="String"/>
         <att name="Bg_spawindows_tablet_image" value="" type="String"/>
-        <att name="Font_weight" value="bold" type="String"/>
+        <att name="Font_weight" value="normal" type="String"/>
         <att name="Font_style" value="none" type="String"/>
         <att name="Font_size" value="100" type="String"/>
         <att name="Font_color" value="255,255,255" type="RGB"/>

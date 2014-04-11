@@ -428,6 +428,24 @@
         <headerId>None</headerId>
         <footerId>None</footerId>
         <title>Options</title>
+        <preShow_root>
+            <evtSequence>
+                <actionList xsi:type="eventExpressionAction">
+                    <enabled>true</enabled>
+                    <name></name>
+                    <type>5</type>
+                    <expr></expr>
+                    <exprMap>
+                        <entry>
+                            <key>js</key>
+                            <value>tmp=0;</value>
+                        </entry>
+                    </exprMap>
+                </actionList>
+                <enabled>true</enabled>
+                <seqname></seqname>
+            </evtSequence>
+        </preShow_root>
         <init>
             <evtSequence>
                 <enabled>true</enabled>
@@ -1739,13 +1757,13 @@
                 </xhtmlAdvBB>
                 <xhtmlAdvBB_override>false</xhtmlAdvBB_override>
                 <spaAndroid>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
+                    <left>3</left>
+                    <right>3</right>
+                    <top>3</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </spaAndroid>
-                <spaAndroid_override>false</spaAndroid_override>
+                <spaAndroid_override>true</spaAndroid_override>
                 <spaBB>
                     <left>0</left>
                     <right>0</right>
@@ -2008,8 +2026,8 @@
                 <spaAndroid>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>3</top>
+                    <bottom>3</bottom>
                     <unit>%</unit>
                 </spaAndroid>
                 <spaAndroid_override>true</spaAndroid_override>
@@ -2548,11 +2566,11 @@
                 <android>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>2</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </android>
-                <android_override>false</android_override>
+                <android_override>true</android_override>
                 <bb>
                     <left>0</left>
                     <right>0</right>
@@ -2725,11 +2743,11 @@
                 <spaAndroid>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>2</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </spaAndroid>
-                <spaAndroid_override>false</spaAndroid_override>
+                <spaAndroid_override>true</spaAndroid_override>
                 <spaBB>
                     <left>0</left>
                     <right>0</right>

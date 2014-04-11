@@ -8,7 +8,7 @@ function hBoxForHeader()
 	var hboxbasic1 = {id:"hdrBox",isVisible:true,orientation:constants.BOX_LAYOUT_HORIZONTAL,skin:"hboxHeader"};
 	var hboxlayout1;
 	if(kony.os.deviceInfo().name=="Windows")
-		hboxlayout1 = {containerWeight:100,margin:[0,57,0,0],padding:[0,0,0,0],percent:true};
+		hboxlayout1 = {containerWeight:100,margin:[0,40,0,0],padding:[0,0,0,0],percent:true};
 	else
 		hboxlayout1 = {containerWeight:100,margin:[0,0,0,0],padding:[0,0,0,0],percent:true};
 	var headerHbox = new kony.ui.Box(hboxbasic1, hboxlayout1, {});
@@ -21,7 +21,11 @@ function hBoxForHeader()
 function hBoxForHeader2()
 {
 	var hboxbasic1 = {id:"hdrBox",isVisible:true,orientation:constants.BOX_LAYOUT_HORIZONTAL,skin:"hboxHeader"};
-	var hboxlayout1 = {containerWeight:100,margin:[0,0,0,0],padding:[0,0,0,0],percent:true};
+	var hboxlayout1;
+	if(kony.os.deviceInfo().name=="Windows")
+		hboxlayout1 = {containerWeight:100,margin:[0,40,0,0],padding:[0,0,0,0],percent:true};
+	else
+		 hboxlayout1 = {containerWeight:100,margin:[0,0,0,0],padding:[0,0,0,0],percent:true};
 	var headerHbox = new kony.ui.Box(hboxbasic1, hboxlayout1, {});
 	if(kony.os.deviceInfo().name=="android" ||kony.os.deviceInfo().name=="thinclient"||kony.os.deviceInfo().name=="blackberry"||kony.os.deviceInfo().name=="WindowsPhone")
 		headerHbox.add(lblForHeader2());
@@ -34,7 +38,7 @@ function lblForHeader()
 	var lblBasicConf1 = { id:"lblForHeader"+random,text :"Locally Packaged",isVisible:true,skin: "lblNormal"};
 	var lbllayoutConf1;
 	if(kony.os.deviceInfo().name=="android"|| kony.os.deviceInfo().name=="thinclient"||kony.os.deviceInfo().name=="blackberry")
-		 lbllayoutConf1 = {containerWeight:80,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[20,1,0,1],vExpand: false,hExpand: true};//,percent:true
+		 lbllayoutConf1 = {containerWeight:80,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[20,2,0,2],vExpand: false,hExpand: true};//,percent:true
 	else if(kony.os.deviceInfo().name=="WindowsPhone")
 		lbllayoutConf1 = {containerWeight:80,hExpand:true,margin:[6,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,0,0,0],vExpand: false,hExpand: true};
 	else if(kony.os.deviceInfo().name=="iPad Simulator"||kony.os.deviceInfo().name=="iPad")
@@ -50,7 +54,7 @@ function lblForHeader2()
 	var lblBasicConf1 = { id:"lblForHeader"+random,text :"Locally Packaged",isVisible:true,skin: "lblNormal"};
 	var lbllayoutConf1;
 	if(kony.os.deviceInfo().name=="android"|| kony.os.deviceInfo().name=="thinclient"||kony.os.deviceInfo().name=="blackberry")
-		 lbllayoutConf1 = {containerWeight:100,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[0,1,0,1],vExpand: false,hExpand: true};//,percent:true
+		 lbllayoutConf1 = {containerWeight:100,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[0,2,0,2],vExpand: false,hExpand: true};//,percent:true
 	else if(kony.os.deviceInfo().name=="WindowsPhone")
 		lbllayoutConf1 = {containerWeight:80,hExpand:true,margin:[6,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,0,0,0],vExpand: false,hExpand: true};
 	else if(kony.os.deviceInfo().name=="iPad Simulator"||kony.os.deviceInfo().name=="iPad")
@@ -76,14 +80,17 @@ function backButton()
 	var currentForm = kony.application.getCurrentForm();
 	if (currentForm.id == "frmDynamicJS")
 	{
-	   		frmDynamicJS.remove(frmDynamicJS["hBoxOuterId"]);		   		
-	        frmOption.show();
-	} else {
+	   		frmDynamicJS.remove(frmDynamicJS["hBoxOuterId"]);
+	   		frmOption.show();
+	   		frmDynamicJS.destroy();	
+	}else{
 			frmDynamicJS.remove(frmDynamicJS["hBoxOuterId"]);
 	        frmDynamicJS2.remove(frmDynamicJS2["hBoxforPlaceInfoOuterId"]);	        
 	        gListId = 0;
 	        count=1;
 	        frmOption.show();
+	        frmDynamicJS.destroy();
+	        frmDynamicJS2.destroy();
 		    }
 }
 /*****************************************************************
@@ -98,11 +105,11 @@ var btnLayout;
 if(kony.os.deviceInfo().name=="iPhone Simulator"||kony.os.deviceInfo().name=="iPhone")
 	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand: true,margin: [0,2,2,2],padding: [1,3,1,3],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 20};
 else if(kony.os.deviceInfo().name=="android"|| kony.os.deviceInfo().name=="blackberry"||kony.os.deviceInfo().name=="thinclient"||kony.os.deviceInfo().name=="WindowsPhone")
-	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand:true,margin: [0,0,0,0],padding: [1,3,1,3],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 20};
+	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand:true,margin: [0,1,2,1],padding: [1,3,1,3],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 20};
 else if(kony.os.deviceInfo().name=="iPad Simulator")
 	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand:true,margin: [0,0,0,0],padding: [1,3,1,3],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 10};
 else if(kony.os.deviceInfo().name=="Windows")
-	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand:true,margin: [0,0,0,0],padding: [1,3,1,3],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 10};
+	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand:true,margin: [0,0,50,0],padding: [1,3,1,3],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 10};
 else
 	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand:true,margin: [0,0,0,0],padding: [1,3,1,3],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 20};
 return new kony.ui.Button(btnBasic,btnLayout,{});}

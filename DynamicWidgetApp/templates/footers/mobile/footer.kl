@@ -22,7 +22,7 @@
         <width>true</width>
         <height>false</height>
     </overridePerferred>
-    <projectName>SampleDynamicWidgets</projectName>
+    <projectName>DynamicWidgetApp</projectName>
     <formName>footer</formName>
     <platform>0</platform>
     <mode>3</mode>

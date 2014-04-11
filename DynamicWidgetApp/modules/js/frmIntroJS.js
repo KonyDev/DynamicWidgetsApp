@@ -15,7 +15,7 @@
 		else if(kony.os.deviceInfo().name=="Windows")
 			hboxlayoutConf1 = {containerWeight:100,margin:[120,0,120,0],padding:[0,0,0,0],percent:true,vExpand: false,hExpand: true};
 		 else
-		 	hboxlayoutConf1 = {containerWeight:100,margin:[0,0,0,0],padding:[0,0,0,0],percent:true,vExpand: false,hExpand: true};
+		 	hboxlayoutConf1 = {containerWeight:100,margin:[1,0,1,0],padding:[0,0,0,0],percent:true,vExpand: false,hExpand: true};
 		var hboxPSPConfig1 = {};
 		topHboxOuter = new kony.ui.Box(hboxbasicConf1, hboxlayoutConf1, hboxPSPConfig1);
 		topHboxOuter.add(vBoxOuter());
@@ -110,7 +110,7 @@
 			masterData = [["key0","Select your country.."],["key1","Argentina"],["key2","Australia"],["key3","Brazil"],["key4","Colombia"],["key5","Czech"],["key6","Greece"],["key7","Hungary"],["key8","India"],["key9","Malaysia"],["key10","Spain"],["key11","UAE"] ];
 			var listBasicConf1 = {id:listId, masterData:masterData, isVisible:true, selectedKey:"key0", skin:"sknListboxKonyThemeNormal",focusSkin:"sknListboxKonyThemeFocus"};
 			if(kony.os.deviceInfo().name=="android")
-				var listLayoutConf1 = {containerWeight:60,hExpand:true,widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,margin:[0,1,2,0],contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,0,0,1],percent:true,vExpand: false,hExpand: true};
+				var listLayoutConf1 = {containerWeight:60,hExpand:true,widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,margin:[0,1,2,0],contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,2,0,2],percent:true,vExpand: false,hExpand: true};
 			else
 				var listLayoutConf1 = {containerWeight:60,hExpand:true,widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,margin:[0,3,2,0],contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,4,0,4],percent:true,vExpand: false,hExpand: true};
 			var listPSPConf1 = {viewType:constants.LISTBOX_VIEW_TYPE_LISTVIEW};
@@ -164,7 +164,6 @@
 		count++;		
 		frmDynamicJS.hBoxOuterId.vBoxOuterId.add(hBoxMain());
 	}
-
 /*****************************************************************
 *	Name    : DisplayfrmDynamicJS
 *	Author  : Kony Solutions
@@ -184,12 +183,14 @@
 	
 	function createDynamicForm(){
 		try{
+			tmp=0;
 			random = 0;
 			gListId = 0;
 			count = 1;
 			var frmLogBasiConf = {id: "frmDynamicJS",type:constants.FORM_TYPE_NATIVE,addWidgets :addWidgetsToDynamicForm,skin :"frmSampleSkin",headers:[hBoxForHeader()]};
 			var frmLayoutConf = {percent:true};
 			var frmPSPConfig = {inTransitionConfig:{transitionDirection:"topCenter"}};
+			
 		    frmDynamicJS = new kony.ui.Form2(frmLogBasiConf, frmLayoutConf, frmPSPConfig);
 		    frmDynamicJS.show();
 		}
@@ -199,13 +200,27 @@
 	}
 	function createDynamicFormRemotely()
 	{
-		var url=appConfig.url;
-		kony.print("************url***********"+ url);
-		var myhttpheaders={authkey:"myauthkey", authtoken:"myauthtoken"};
-		var inputParamTable={};
-		inputParamTable={appID:"dynamicwidget", serviceID:"javaString", channel: "rc",httpheaders:myhttpheaders};
-	   	var connHandle = kony.net.invokeServiceAsync(url,inputParamTable,callbackfunction);
-	   	alert("A");
+		if(tmp==0)
+		{
+			var url=appConfig.url;
+			kony.print("************url***********"+ url);
+			
+			var myhttpheaders={authkey:"myauthkey", authtoken:"myauthtoken"};
+			var inputParamTable={};
+			if(kony.os.deviceInfo().name=="Windows")
+			{
+				//inputParamTable={appID:"dynamicwidget", serviceID:"javaString",httpheaders:myhttpheaders};
+				alert("A");
+				inputParamTable["serviceID"]="javaString";
+				inputParamTable["httpheaders"]={};
+				inputParamTable["httpconfigs"]={};
+				alert(" "+url);
+			}
+			else
+				inputParamTable={appID:"dynamicwidget", serviceID:"javaString", channel: "rc",httpheaders:myhttpheaders};
+	   		var connHandle = kony.net.invokeServiceAsync(url,inputParamTable,callbackfunction);
+	   		tmp=1;
+	   	}
 	}
 	function callbackfunction(status,result)
 	{

@@ -22,7 +22,7 @@
         <width>true</width>
         <height>false</height>
     </overridePerferred>
-    <projectName>SampleDynamicWidgets</projectName>
+    <projectName>DynamicWidgetApp</projectName>
     <formName>frmIntro</formName>
     <platform>0</platform>
     <mode>0</mode>
@@ -1024,7 +1024,7 @@
                 <spaAndroid>
                     <left>2</left>
                     <right>0</right>
-                    <top>5</top>
+                    <top>3</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </spaAndroid>
@@ -1670,13 +1670,13 @@
                 </xhtmlAdvBB>
                 <xhtmlAdvBB_override>false</xhtmlAdvBB_override>
                 <spaAndroid>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
+                    <left>3</left>
+                    <right>3</right>
+                    <top>5</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </spaAndroid>
-                <spaAndroid_override>false</spaAndroid_override>
+                <spaAndroid_override>true</spaAndroid_override>
                 <spaBB>
                     <left>0</left>
                     <right>0</right>
@@ -2464,11 +2464,11 @@
                 <android>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>2</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </android>
-                <android_override>false</android_override>
+                <android_override>true</android_override>
                 <bb>
                     <left>0</left>
                     <right>0</right>
@@ -2641,11 +2641,11 @@
                 <spaAndroid>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>2</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </spaAndroid>
-                <spaAndroid_override>false</spaAndroid_override>
+                <spaAndroid_override>true</spaAndroid_override>
                 <spaBB>
                     <left>0</left>
                     <right>0</right>
