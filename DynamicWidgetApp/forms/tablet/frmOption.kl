@@ -933,14 +933,14 @@
                 </spaWinphone8>
                 <spaWinphone8_override>false</spaWinphone8_override>
                 <spaipad>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <left>30</left>
+                    <right>30</right>
+                    <top>10</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </spaipad>
-                <spaipad_override>false</spaipad_override>
-                <spatablet_android_override>false</spatablet_android_override>
+                <spaipad_override>true</spaipad_override>
+                <spatablet_android_override>true</spatablet_android_override>
                 <spatablet_windows_override>false</spatablet_windows_override>
                 <symbian>
                     <left>1</left>
@@ -959,10 +959,10 @@
                 </tabRCAndroid>
                 <tablet_rc_android_override>true</tablet_rc_android_override>
                 <tabspaAndroid>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <left>30</left>
+                    <right>30</right>
+                    <top>10</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </tabspaAndroid>
                 <tabspaWindows>
@@ -1202,11 +1202,11 @@
                 <spaipad>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>3</top>
+                    <bottom>3</bottom>
                     <unit>%</unit>
                 </spaipad>
-                <spaipad_override>false</spaipad_override>
+                <spaipad_override>true</spaipad_override>
                 <spatablet_android_override>false</spatablet_android_override>
                 <spatablet_windows_override>false</spatablet_windows_override>
                 <symbian>
@@ -1650,14 +1650,14 @@
                 </spaWinphone8>
                 <spaWinphone8_override>false</spaWinphone8_override>
                 <spaipad>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
+                    <left>30</left>
+                    <right>30</right>
+                    <top>2</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </spaipad>
-                <spaipad_override>false</spaipad_override>
-                <spatablet_android_override>false</spatablet_android_override>
+                <spaipad_override>true</spaipad_override>
+                <spatablet_android_override>true</spatablet_android_override>
                 <spatablet_windows_override>false</spatablet_windows_override>
                 <symbian>
                     <left>3</left>
@@ -1676,9 +1676,9 @@
                 </tabRCAndroid>
                 <tablet_rc_android_override>true</tablet_rc_android_override>
                 <tabspaAndroid>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
+                    <left>30</left>
+                    <right>30</right>
+                    <top>2</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </tabspaAndroid>
@@ -1852,12 +1852,12 @@
                 </bb10>
                 <bb10_override>false</bb10_override>
                 <bb_override>true</bb_override>
-                <default_override>false</default_override>
+                <default_override>true</default_override>
                 <defaults>
                     <left>0</left>
                     <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <top>3</top>
+                    <bottom>3</bottom>
                     <unit>%</unit>
                 </defaults>
                 <desktop_kiosk>

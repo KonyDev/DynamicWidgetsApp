@@ -5,8 +5,10 @@
 		if(kony.os.deviceInfo().name=="WindowsPhone")
 		{
 			hboxlayoutConf1 = {containerWeight:100,margin:[6,0,6,0],padding:[0,0,0,0],percent:true};
-		}else if(kony.os.deviceInfo().name=="android"||kony.os.deviceInfo().name=="thinclient")
+		}else if(kony.os.deviceInfo().name=="android")
 			hboxlayoutConf1 = {containerWeight:100,margin:[1,0,1,0],padding:[0,0,0,0],percent:true};
+		else if(kony.os.deviceInfo().name=="thinclient")
+			hboxlayoutConf1 = {containerWeight:100,margin:[0,0,0,0],padding:[1,1,1,1],percent:true};
 		else
 			hboxlayoutConf1 = {containerWeight:100,margin:[10,0,10,0],padding:[0,0,0,0],percent:true};
 		var hboxPSPConfig1 = {};
@@ -130,10 +132,11 @@ function lblForNameInfo(text){
 ******************************************************************/
 function addWidgetsToDynamicFormTwo(){
 		if(frmDynamicJS2["hBoxforPlaceInfoOuterId"]) 
-		{frmDynamicJS2.remove(frmDynamicJS2["hBoxforPlaceInfoOuterId"]);}		
+		{
+			frmDynamicJS2.remove(frmDynamicJS2["hBoxforPlaceInfoOuterId"]);
+		}		
 		    frmDynamicJS2.add(hBoxforPlaceInfoOuter());
 	}
-
 /*****************************************************************
 *	Name    : createDynamicForm2
 *	Author  : Kony Solutions

@@ -868,12 +868,12 @@
                 </bb10>
                 <bb10_override>false</bb10_override>
                 <bb_override>true</bb_override>
-                <default_override>false</default_override>
+                <default_override>true</default_override>
                 <defaults>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <left>1</left>
+                    <right>1</right>
+                    <top>1</top>
+                    <bottom>1</bottom>
                     <unit>%</unit>
                 </defaults>
                 <desktop_kiosk>
@@ -1137,10 +1137,10 @@
                 <bb_override>true</bb_override>
                 <default_override>true</default_override>
                 <defaults>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <left>1</left>
+                    <right>1</right>
+                    <top>1</top>
+                    <bottom>1</bottom>
                     <unit>%</unit>
                 </defaults>
                 <desktop_kiosk>
@@ -1581,14 +1581,14 @@
                 </spaWinphone8>
                 <spaWinphone8_override>false</spaWinphone8_override>
                 <spaipad>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <left>30</left>
+                    <right>30</right>
+                    <top>10</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </spaipad>
-                <spaipad_override>false</spaipad_override>
-                <spatablet_android_override>false</spatablet_android_override>
+                <spaipad_override>true</spaipad_override>
+                <spatablet_android_override>true</spatablet_android_override>
                 <spatablet_windows_override>false</spatablet_windows_override>
                 <symbian>
                     <left>1</left>
@@ -1607,10 +1607,10 @@
                 </tabRCAndroid>
                 <tablet_rc_android_override>true</tablet_rc_android_override>
                 <tabspaAndroid>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
-                    <bottom>0</bottom>
+                    <left>30</left>
+                    <right>30</right>
+                    <top>10</top>
+                    <bottom>2</bottom>
                     <unit>%</unit>
                 </tabspaAndroid>
                 <tabspaWindows>
@@ -3391,7 +3391,7 @@
             <iphone_fixed_height>false</iphone_fixed_height>
             <iphone_req_parallel_exec>false</iphone_req_parallel_exec>
             <iphone_option>0</iphone_option>
-            <contentAlign>3</contentAlign>
+            <contentAlign>0</contentAlign>
             <ipad_option>0</ipad_option>
             <ipad_fixed_height>false</ipad_fixed_height>
             <bb_position>0</bb_position>
@@ -5401,7 +5401,7 @@
             <iphone_fixed_height>false</iphone_fixed_height>
             <iphone_req_parallel_exec>false</iphone_req_parallel_exec>
             <iphone_option>0</iphone_option>
-            <contentAlign>3</contentAlign>
+            <contentAlign>0</contentAlign>
             <ipad_option>0</ipad_option>
             <ipad_fixed_height>false</ipad_fixed_height>
             <bb_position>0</bb_position>
@@ -8160,11 +8160,11 @@
                     <y>1</y>
                 </location>
                 <size>
-                    <width>348</width>
+                    <width>351</width>
                     <height>34</height>
                 </size>
                 <sizePercent>
-                    <width>89</width>
+                    <width>90</width>
                     <height>100</height>
                 </sizePercent>
                 <skinId>sknLblKonyThemeNormal</skinId>
@@ -12180,11 +12180,11 @@
                     <y>1</y>
                 </location>
                 <size>
-                    <width>349</width>
+                    <width>351</width>
                     <height>34</height>
                 </size>
                 <sizePercent>
-                    <width>89</width>
+                    <width>90</width>
                     <height>100</height>
                 </sizePercent>
                 <skinId>Skin Defaults</skinId>
@@ -13490,7 +13490,7 @@
                 </location>
                 <createdGAVersion>5.5.0</createdGAVersion>
                 <size>
-                    <width>40</width>
+                    <width>41</width>
                     <height>34</height>
                 </size>
                 <sizePercent>
@@ -14186,11 +14186,11 @@
                 <widgetID>p2kwiet12066495668300</widgetID>
                 <createdGAVersion>5.0.0</createdGAVersion>
                 <location>
-                    <x>42</x>
+                    <x>43</x>
                     <y>1</y>
                 </location>
                 <size>
-                    <width>352</width>
+                    <width>351</width>
                     <height>34</height>
                 </size>
                 <sizePercent>
@@ -15500,7 +15500,7 @@
                 </location>
                 <createdGAVersion>5.5.0</createdGAVersion>
                 <size>
-                    <width>39</width>
+                    <width>41</width>
                     <height>34</height>
                 </size>
                 <sizePercent>
@@ -16196,11 +16196,11 @@
                 <widgetID>p2kwiet12066495668258</widgetID>
                 <createdGAVersion>5.0.0</createdGAVersion>
                 <location>
-                    <x>41</x>
+                    <x>43</x>
                     <y>1</y>
                 </location>
                 <size>
-                    <width>353</width>
+                    <width>351</width>
                     <height>34</height>
                 </size>
                 <sizePercent>
@@ -17510,7 +17510,7 @@
                 </location>
                 <createdGAVersion>5.5.0</createdGAVersion>
                 <size>
-                    <width>39</width>
+                    <width>41</width>
                     <height>34</height>
                 </size>
                 <sizePercent>
@@ -18206,11 +18206,11 @@
                 <widgetID>p2kwiet12066495668253</widgetID>
                 <createdGAVersion>5.0.0</createdGAVersion>
                 <location>
-                    <x>41</x>
+                    <x>43</x>
                     <y>1</y>
                 </location>
                 <size>
-                    <width>353</width>
+                    <width>351</width>
                     <height>34</height>
                 </size>
                 <sizePercent>

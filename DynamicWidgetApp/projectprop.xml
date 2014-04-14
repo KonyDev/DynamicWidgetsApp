@@ -94,7 +94,7 @@
     <attributes name="bb10keystorepassword" value=""/>
     <attributes name="pathpatternkey" value=""/>
     <attributes name="wp8iconicsmallkey" value=""/>
-    <attributes name="splashlogokey" value="0=splash.9.png,1=iphone_5.png,8=andriod_hdpi.png,2=bb9860.png,46=,42=,3=,16=,18=andriod_hdpi.png,43=andriod_tablet.png,22=iphone_5.png,1000=,1001=,1002=,31=,32=,45=,23=,24=,35=,44=,36=,21=,37="/>
+    <attributes name="splashlogokey" value="0=splash.9.png,1=iphone_5.png,8=andriod_hdpi.png,2=bb9860.png,46=,42=,3=,16=,18=andriod_hdpi.png,43=andriod_tablet.png,22=iphone_5.png,1000=,1001=ipad_4.png,1002=,31=ipad_4.png,32=ipad_4.png,45=,23=,24=,35=,44=,36=,21=,37="/>
     <attributes name="Shared_User_Certificates" value="true"/>
     <attributes name="inputaccessoryviewtype" value="nextprevtoolbar"/>
     <attributes name="android_allowselfsignedcertificates" value="None"/>

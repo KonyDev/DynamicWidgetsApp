@@ -1678,9 +1678,9 @@
                 </spaAndroid>
                 <spaAndroid_override>true</spaAndroid_override>
                 <spaBB>
-                    <left>0</left>
-                    <right>0</right>
-                    <top>0</top>
+                    <left>4</left>
+                    <right>4</right>
+                    <top>5</top>
                     <bottom>0</bottom>
                     <unit>%</unit>
                 </spaBB>
@@ -1692,7 +1692,7 @@
                     <unit>%</unit>
                 </spaBBNth>
                 <spaBBNth_override>false</spaBBNth_override>
-                <spaBB_override>false</spaBB_override>
+                <spaBB_override>true</spaBB_override>
                 <spaIphone>
                     <left>3</left>
                     <right>3</right>
@@ -12509,7 +12509,7 @@
                         <bottom>2</bottom>
                         <unit>px</unit>
                     </android>
-                    <android_override>true</android_override>
+                    <android_override>false</android_override>
                     <bb>
                         <left>1</left>
                         <right>1</right>
@@ -12525,7 +12525,7 @@
                         <unit>%</unit>
                     </bb10>
                     <bb10_override>false</bb10_override>
-                    <bb_override>true</bb_override>
+                    <bb_override>false</bb_override>
                     <default_override>true</default_override>
                     <defaults>
                         <left>0</left>
@@ -12565,7 +12565,7 @@
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </iphonerc>
-                    <iphonerc_override>true</iphonerc_override>
+                    <iphonerc_override>false</iphonerc_override>
                     <j2me>
                         <left>1</left>
                         <right>1</right>
@@ -12670,7 +12670,7 @@
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </winphone8>
-                    <winphone8_override>true</winphone8_override>
+                    <winphone8_override>false</winphone8_override>
                     <xhtmlAdvBB>
                         <left>1</left>
                         <right>1</right>
@@ -12678,7 +12678,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </xhtmlAdvBB>
-                    <xhtmlAdvBB_override>true</xhtmlAdvBB_override>
+                    <xhtmlAdvBB_override>false</xhtmlAdvBB_override>
                     <spaAndroid>
                         <left>1</left>
                         <right>1</right>
@@ -12686,7 +12686,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </spaAndroid>
-                    <spaAndroid_override>true</spaAndroid_override>
+                    <spaAndroid_override>false</spaAndroid_override>
                     <spaBB>
                         <left>1</left>
                         <right>1</right>
@@ -12701,8 +12701,8 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </spaBBNth>
-                    <spaBBNth_override>true</spaBBNth_override>
-                    <spaBB_override>true</spaBB_override>
+                    <spaBBNth_override>false</spaBBNth_override>
+                    <spaBB_override>false</spaBB_override>
                     <spaIphone>
                         <left>1</left>
                         <right>1</right>
@@ -12710,7 +12710,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </spaIphone>
-                    <spaIphone_override>true</spaIphone_override>
+                    <spaIphone_override>false</spaIphone_override>
                     <spaWindows>
                         <left>1</left>
                         <right>1</right>
@@ -12718,7 +12718,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </spaWindows>
-                    <spaWindows_override>true</spaWindows_override>
+                    <spaWindows_override>false</spaWindows_override>
                     <xhtmlAdvAndroid>
                         <left>1</left>
                         <right>1</right>
@@ -12726,7 +12726,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </xhtmlAdvAndroid>
-                    <xhtmlAdvAndroid_override>true</xhtmlAdvAndroid_override>
+                    <xhtmlAdvAndroid_override>false</xhtmlAdvAndroid_override>
                     <xhtmlAdvIphone>
                         <left>1</left>
                         <right>1</right>
@@ -12734,7 +12734,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </xhtmlAdvIphone>
-                    <xhtmlAdvIphone_override>true</xhtmlAdvIphone_override>
+                    <xhtmlAdvIphone_override>false</xhtmlAdvIphone_override>
                     <xhtmlAdvNth>
                         <left>1</left>
                         <right>1</right>
@@ -12742,7 +12742,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </xhtmlAdvNth>
-                    <xhtmlAdvNth_override>true</xhtmlAdvNth_override>
+                    <xhtmlAdvNth_override>false</xhtmlAdvNth_override>
                     <xhtmlAdvPalm>
                         <left>1</left>
                         <right>1</right>
@@ -12750,7 +12750,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </xhtmlAdvPalm>
-                    <xhtmlAdvPalm_override>true</xhtmlAdvPalm_override>
+                    <xhtmlAdvPalm_override>false</xhtmlAdvPalm_override>
                     <xhtmlJS>
                         <left>1</left>
                         <right>1</right>
@@ -12758,7 +12758,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </xhtmlJS>
-                    <xhtmlJS_override>true</xhtmlJS_override>
+                    <xhtmlJS_override>false</xhtmlJS_override>
                     <xhtmlNormal>
                         <left>0</left>
                         <right>0</right>
@@ -18539,7 +18539,7 @@
                         <bottom>2</bottom>
                         <unit>px</unit>
                     </android>
-                    <android_override>true</android_override>
+                    <android_override>false</android_override>
                     <bb>
                         <left>1</left>
                         <right>1</right>
@@ -18555,8 +18555,8 @@
                         <unit>%</unit>
                     </bb10>
                     <bb10_override>false</bb10_override>
-                    <bb_override>true</bb_override>
-                    <default_override>false</default_override>
+                    <bb_override>false</bb_override>
+                    <default_override>true</default_override>
                     <defaults>
                         <left>0</left>
                         <right>0</right>
@@ -18595,7 +18595,7 @@
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </iphonerc>
-                    <iphonerc_override>true</iphonerc_override>
+                    <iphonerc_override>false</iphonerc_override>
                     <j2me>
                         <left>1</left>
                         <right>1</right>
@@ -18692,7 +18692,7 @@
                         <unit>px</unit>
                     </winmobile6x>
                     <winmobile6x_override>true</winmobile6x_override>
-                    <winmobile_override>true</winmobile_override>
+                    <winmobile_override>false</winmobile_override>
                     <winphone8>
                         <left>0</left>
                         <right>0</right>
@@ -18700,7 +18700,7 @@
                         <bottom>0</bottom>
                         <unit>%</unit>
                     </winphone8>
-                    <winphone8_override>true</winphone8_override>
+                    <winphone8_override>false</winphone8_override>
                     <xhtmlAdvBB>
                         <left>1</left>
                         <right>1</right>
@@ -18708,7 +18708,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </xhtmlAdvBB>
-                    <xhtmlAdvBB_override>true</xhtmlAdvBB_override>
+                    <xhtmlAdvBB_override>false</xhtmlAdvBB_override>
                     <spaAndroid>
                         <left>1</left>
                         <right>1</right>
@@ -18716,7 +18716,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </spaAndroid>
-                    <spaAndroid_override>true</spaAndroid_override>
+                    <spaAndroid_override>false</spaAndroid_override>
                     <spaBB>
                         <left>1</left>
                         <right>1</right>
@@ -18731,8 +18731,8 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </spaBBNth>
-                    <spaBBNth_override>true</spaBBNth_override>
-                    <spaBB_override>true</spaBB_override>
+                    <spaBBNth_override>false</spaBBNth_override>
+                    <spaBB_override>false</spaBB_override>
                     <spaIphone>
                         <left>1</left>
                         <right>1</right>
@@ -18740,7 +18740,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </spaIphone>
-                    <spaIphone_override>true</spaIphone_override>
+                    <spaIphone_override>false</spaIphone_override>
                     <spaWindows>
                         <left>1</left>
                         <right>1</right>
@@ -18748,7 +18748,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </spaWindows>
-                    <spaWindows_override>true</spaWindows_override>
+                    <spaWindows_override>false</spaWindows_override>
                     <xhtmlAdvAndroid>
                         <left>1</left>
                         <right>1</right>
@@ -18756,7 +18756,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </xhtmlAdvAndroid>
-                    <xhtmlAdvAndroid_override>true</xhtmlAdvAndroid_override>
+                    <xhtmlAdvAndroid_override>false</xhtmlAdvAndroid_override>
                     <xhtmlAdvIphone>
                         <left>1</left>
                         <right>1</right>
@@ -18764,7 +18764,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </xhtmlAdvIphone>
-                    <xhtmlAdvIphone_override>true</xhtmlAdvIphone_override>
+                    <xhtmlAdvIphone_override>false</xhtmlAdvIphone_override>
                     <xhtmlAdvNth>
                         <left>1</left>
                         <right>1</right>
@@ -18772,7 +18772,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </xhtmlAdvNth>
-                    <xhtmlAdvNth_override>true</xhtmlAdvNth_override>
+                    <xhtmlAdvNth_override>false</xhtmlAdvNth_override>
                     <xhtmlAdvPalm>
                         <left>1</left>
                         <right>1</right>
@@ -18780,7 +18780,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </xhtmlAdvPalm>
-                    <xhtmlAdvPalm_override>true</xhtmlAdvPalm_override>
+                    <xhtmlAdvPalm_override>false</xhtmlAdvPalm_override>
                     <xhtmlJS>
                         <left>1</left>
                         <right>1</right>
@@ -18788,7 +18788,7 @@
                         <bottom>2</bottom>
                         <unit>%</unit>
                     </xhtmlJS>
-                    <xhtmlJS_override>true</xhtmlJS_override>
+                    <xhtmlJS_override>false</xhtmlJS_override>
                     <xhtmlNormal>
                         <left>0</left>
                         <right>0</right>
