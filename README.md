@@ -22,3 +22,5 @@ The application displays a selection of dynamic widgets that includes, Dynamic: 
 **Tablet**
  * iPad
  * Android Tab
+ * SPA iPad
+ * SPA Android Tab
