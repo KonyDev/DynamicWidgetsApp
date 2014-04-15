@@ -428,6 +428,24 @@
         <headerId>None</headerId>
         <footerId>None</footerId>
         <title>Options</title>
+        <preShow_root>
+            <evtSequence>
+                <actionList xsi:type="eventExpressionAction">
+                    <enabled>true</enabled>
+                    <name></name>
+                    <type>5</type>
+                    <expr></expr>
+                    <exprMap>
+                        <entry>
+                            <key>js</key>
+                            <value>tmp=0;</value>
+                        </entry>
+                    </exprMap>
+                </actionList>
+                <enabled>true</enabled>
+                <seqname></seqname>
+            </evtSequence>
+        </preShow_root>
         <init>
             <evtSequence>
                 <enabled>true</enabled>

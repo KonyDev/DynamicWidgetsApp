@@ -35,7 +35,11 @@
 	function hBoxforPlaceInfo(){
 		random = random+1;
 		var hboxbasicConf1 = {id:"hBoxforPlaceInfo"+random,isVisible:true,orientation:constants.BOX_LAYOUT_HORIZONTAL,skin:"HboxRoundedSkinJS"};
-		var hboxlayoutConf1 = {containerWeight:100,margin:[2,2,2,2],padding:[0,0,0,0],percent:true};
+		var hboxlayoutConf1;
+		if(kony.os.deviceInfo().name=="thinclient")
+			hboxlayoutConf1 = {containerWeight:100,margin:[1,1,1,1],padding:[0,0,0,0],percent:true};
+		else
+			hboxlayoutConf1 = {containerWeight:100,margin:[2,2,2,2],padding:[0,0,0,0],percent:true};
 		var hboxPSPConfig1 = {};
 		var topHbox = new kony.ui.Box(hboxbasicConf1, hboxlayoutConf1, hboxPSPConfig1);
 		topHbox.add(vBoxforPlaceInfo());

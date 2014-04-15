@@ -1,7 +1,7 @@
 /*****************************************************************
 *	Name    : hBoxForHeader
 *	Author  : Kony Solutions
-*	Purpose : Below function will return the top Hbox for Header which added in form(frmDynamicJS) 
+*	Purpose : Below function will return the top Hbox for Header which added in form(frmDynamicJS).
 ******************************************************************/
 function hBoxForHeader()
 {
@@ -37,8 +37,10 @@ function lblForHeader()
 {
 	var lblBasicConf1 = { id:"lblForHeader"+random,text :"Locally Packaged",isVisible:true,skin: "lblNormal"};
 	var lbllayoutConf1;
-	if(kony.os.deviceInfo().name=="android"|| kony.os.deviceInfo().name=="thinclient"||kony.os.deviceInfo().name=="blackberry")
+	if(kony.os.deviceInfo().name=="android"||kony.os.deviceInfo().name=="blackberry")
 		 lbllayoutConf1 = {containerWeight:80,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[20,2,0,2],vExpand: false,hExpand: true};//,percent:true
+	else if( kony.os.deviceInfo().name=="thinclient")
+		 lbllayoutConf1 = {containerWeight:80,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[20,1,0,1],vExpand: false,hExpand: true};
 	else if(kony.os.deviceInfo().name=="WindowsPhone")
 		lbllayoutConf1 = {containerWeight:80,hExpand:true,margin:[6,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,0,0,0],vExpand: false,hExpand: true};
 	else if(kony.os.deviceInfo().name=="iPad Simulator"||kony.os.deviceInfo().name=="iPad")
@@ -53,8 +55,10 @@ function lblForHeader2()
 {
 	var lblBasicConf1 = { id:"lblForHeader"+random,text :"Locally Packaged",isVisible:true,skin: "lblNormal"};
 	var lbllayoutConf1;
-	if(kony.os.deviceInfo().name=="android"|| kony.os.deviceInfo().name=="thinclient"||kony.os.deviceInfo().name=="blackberry")
+	if(kony.os.deviceInfo().name=="android"||kony.os.deviceInfo().name=="blackberry")
 		 lbllayoutConf1 = {containerWeight:100,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[0,2,0,2],vExpand: false,hExpand: true};//,percent:true
+	else if(kony.os.deviceInfo().name=="thinclient")
+		 lbllayoutConf1 = {containerWeight:100,hExpand:true,margin:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_CENTER,padding:[0,1,0,1],vExpand: false,hExpand: true};
 	else if(kony.os.deviceInfo().name=="WindowsPhone")
 		lbllayoutConf1 = {containerWeight:80,hExpand:true,margin:[6,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_CENTER,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,0,0,0],vExpand: false,hExpand: true};
 	else if(kony.os.deviceInfo().name=="iPad Simulator"||kony.os.deviceInfo().name=="iPad")
@@ -96,7 +100,7 @@ function backButton()
 /*****************************************************************
 *	Name    : hBoxForHeader
 *	Author  : Kony Solutions
-*	Purpose : Below function will return the "Add Another Order" button 
+*	Purpose : Below function will return the "Add Another Order" button. 
 	******************************************************************/
 function btnAdd(text)
 {
@@ -104,8 +108,10 @@ var btnBasic={id: "btnAAO",isVisible: true,text: text,skin: "btnAddAnotherOrder"
 var btnLayout;
 if(kony.os.deviceInfo().name=="iPhone Simulator"||kony.os.deviceInfo().name=="iPhone")
 	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand: true,margin: [0,2,2,2],padding: [1,3,1,3],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 20};
-else if(kony.os.deviceInfo().name=="android"|| kony.os.deviceInfo().name=="blackberry"||kony.os.deviceInfo().name=="thinclient"||kony.os.deviceInfo().name=="WindowsPhone")
+else if(kony.os.deviceInfo().name=="android"|| kony.os.deviceInfo().name=="blackberry"||kony.os.deviceInfo().name=="WindowsPhone")
 	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand:true,margin: [0,1,2,1],padding: [1,3,1,3],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 20};
+else if(kony.os.deviceInfo().name=="thinclient")
+	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand:true,margin: [2,1,2,1],padding: [0,3,0,3],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 20};
 else if(kony.os.deviceInfo().name=="iPad Simulator")
 	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand:true,margin: [0,0,0,0],padding: [1,3,1,3],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 10};
 else if(kony.os.deviceInfo().name=="Windows")
@@ -113,20 +119,20 @@ else if(kony.os.deviceInfo().name=="Windows")
 else
 	btnLayout={ widgetAlignment: constants.WIDGET_ALIGN_CENTER,vExpand: false,hExpand:true,margin: [0,0,0,0],padding: [1,3,1,3],contentAlignment: constants.CONTENT_ALIGN_CENTER,displayText: true,containerWeight: 20};
 return new kony.ui.Button(btnBasic,btnLayout,{});}
-	/*****************************************************************
+/*****************************************************************
 	*	Name    : hBoxForHeader
 	*	Author  : Kony Solutions
 	*	Purpose : Below function will return the top Vbox of footer which added in form(frmDynamicJS) 
 	******************************************************************/
 		
-		/*function hBoxForPlaceAnOrder(){
+/*function hBoxForPlaceAnOrder(){
 			var hboxbasic1 = {id:"hBoxPAO",isVisible:true,orientation:constants.BOX_LAYOUT_HORIZONTAL,skin:"hbxFooter"};
 			var hboxlayout1 = {containerWeight:100,padding:[0,2,0,2],percent:true};
 			var footerHbox = new kony.ui.Box(hboxbasic1, hboxlayout1, {});
 			footerHbox.add(btnForPlaceAnOrder("Done"),btnAdd("Add"));
 			return footerHbox;
 		}*/
-	/*****************************************************************
+/*****************************************************************
 	*	Name    : hBoxForHeader
 	*	Author  : Kony Solutions
 	*	Purpose : Below function will return the "Place An Order" button 

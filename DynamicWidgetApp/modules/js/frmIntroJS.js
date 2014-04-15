@@ -45,7 +45,11 @@
 	function hBoxMain(){
 		random = random+1;
 		var hboxbasicConf1 = {id:"hBoxMain"+random,isVisible:true,position: constants.BOX_POSITION_AS_NORMAL,orientation:constants.BOX_LAYOUT_HORIZONTAL,skin:"HboxRoundedSkinJS"};
-		var hboxlayoutConf1 = {containerWeight:100,margin:[0,2,0,0],padding:[0,0,2,3],percent:true,vExpand: false,hExpand: true};
+		var hboxlayoutConf1;
+		if(kony.os.deviceInfo().name=="thinclient")
+		 hboxlayoutConf1 = {containerWeight:100,margin:[0,2,0,0],padding:[0,0,0,1],percent:true,vExpand: false,hExpand: true};
+		else
+			var hboxlayoutConf1 = {containerWeight:100,margin:[0,2,0,0],padding:[0,0,2,3],percent:true,vExpand: false,hExpand: true};
 		var hboxPSPConfig1 = {};
 		var topHbox = new kony.ui.Box(hboxbasicConf1, hboxlayoutConf1, hboxPSPConfig1);
 		topHbox.add(vBoxMain());
@@ -111,6 +115,8 @@
 			var listBasicConf1 = {id:listId, masterData:masterData, isVisible:true, selectedKey:"key0", skin:"sknListboxKonyThemeNormal",focusSkin:"sknListboxKonyThemeFocus"};
 			if(kony.os.deviceInfo().name=="android")
 				var listLayoutConf1 = {containerWeight:60,hExpand:true,widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,margin:[0,1,2,0],contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,2,0,2],percent:true,vExpand: false,hExpand: true};
+			else if(kony.os.deviceInfo().name=="thinclient")
+				var listLayoutConf1 = {containerWeight:60,hExpand:true,widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,margin:[0,3,2,0],contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,2,0,2],percent:true,vExpand: false,hExpand: true};
 			else
 				var listLayoutConf1 = {containerWeight:60,hExpand:true,widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,margin:[0,3,2,0],contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,padding:[0,4,0,4],percent:true,vExpand: false,hExpand: true};
 			var listPSPConf1 = {viewType:constants.LISTBOX_VIEW_TYPE_LISTVIEW};
@@ -149,6 +155,8 @@
 		var txtBoxBasic1 = {id:quantityId,isVisible:true,placeholder:"Enter your Name",skin:"sknTbxKonyThemeNormal",focusSkin:"sknTbxKonyThemeFocus",textInputMode:constants.TEXTBOX_INPUT_MODE_ANY, keyBoardStyle:constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT}; 
 		if(kony.os.deviceInfo().name=="android")
 			return new kony.ui.TextBox2(txtBoxBasic1, {containerWeight:60,hExpand:true,margin:[0,1,2,0],padding:[0,2,0,2],widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,percent:true}, {});
+		else if(kony.os.deviceInfo().name=="thinclient")
+			return new kony.ui.TextBox2(txtBoxBasic1, {containerWeight:60,hExpand:true,margin:[0,1,2,0],padding:[0,1,0,1],widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,percent:true}, {});
 		else
 			return new kony.ui.TextBox2(txtBoxBasic1, {containerWeight:60,hExpand:true,margin:[0,1,2,0],padding:[0,4,0,4],widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,percent:true}, {});
 			//return new kony.ui.TextBox2(txtBoxBasic1, {containerWeight:60,hExpand:true,margin:[0,3,2,0],padding:[0,0,0,0],widgetAlignment:constants.WIDGET_ALIGN_MIDDLE_LEFT,contentAlignment :constants.CONTENT_ALIGN_MIDDLE_LEFT,percent:true}, {});
