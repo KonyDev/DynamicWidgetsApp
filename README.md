@@ -15,6 +15,7 @@ The application displays a selection of dynamic widgets that includes, Dynamic: 
  * android
  * Windows Phone7.5
  * Windows Phone8
+ * BlackBerry
  * SPA iPhone
  * SPA Android
  * SPA BlackBerry
@@ -24,3 +25,6 @@ The application displays a selection of dynamic widgets that includes, Dynamic: 
  * Android Tab
  * SPA iPad
  * SPA Android Tab
+
+**Desktop**
+ * DesktopWeb
