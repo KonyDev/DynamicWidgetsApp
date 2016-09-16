@@ -31,3 +31,4 @@ The application displays a selection of dynamic widgets that includes, Dynamic: 
 
 **Supports Kony Studio:**6.5.x,7.x
  
+ Certified4KonyCommunity7.1.1 
