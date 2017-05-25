@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<application name="test" id="test">
-    <container type="form" id="frmIntro" displayname="Form"/>
-    <container type="form" id="frmOne" displayname="Form"/>
-    <globalsequences/>
-    <skins/>
-</application>

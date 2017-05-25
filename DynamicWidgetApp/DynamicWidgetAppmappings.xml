@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<application id="DynamicWidgetApp" name="DynamicWidgetApp">
-    <container isflex="false" displayname="Popup" id="footer" type="dialog"/>
-    <container isflex="false" displayname="Form" id="frmIntro" type="form"/>
-    <container isflex="false" displayname="Form" id="frmOption" type="form"/>
-    <globalsequences/>
-    <skins/>
-</application>

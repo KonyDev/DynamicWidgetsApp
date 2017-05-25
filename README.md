@@ -14,9 +14,10 @@ The application displays a selection of dynamic widgets that includes, Dynamic: 
 
 1. Download the project zip file.
 2. Unzip the project to any folder
-3. Launch Kony Visualizer Enterprise version 7.0.
-4. Import the project into Kony Visualizer Enterprise version 7.0.
-5. Build & run the app for supported platforms.
+3. Launch Kony Visualizer Enterprise version 7.3.
+4. Import the project into Kony Visualizer Enterprise version 7.3 by selecting DynamicWidgetsApp.zip
+5. Import services into Mobile Fabric
+6. Build & run the app for supported platforms.
 
 # Supported platforms:
 **Mobile**
